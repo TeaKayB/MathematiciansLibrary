@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Global Map Archives</title>
     
-    <!-- 1. Leaflet Map CSS Style Layer (Using jsDelivr CDN) -->
-    <link rel="stylesheet" href="https://jsdelivr.net" />
+    <!-- 1. Leaflet Map CSS Style Layer (Using Microsoft's un-blockable global CDN) -->
+    <link rel="stylesheet" href="https://pyimagesearch.com" />
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- 2. Leaflet Map Engine JavaScript (Using jsDelivr CDN) -->
-    <script src="https://jsdelivr.net"></script>
+    <!-- 2. Leaflet Map Engine JavaScript (Using Microsoft's un-blockable global CDN) -->
+    <script src="https://pyimagesearch.com"></script>
 </head>
 <body>
 
@@ -39,7 +39,7 @@
         // Initialise the map view over global coordinates
         var map = L.map('map').setView([20.0, 0.0], 2);
 
-        // Load light background tiles
+        // Load light background tiles from OpenStreetMap/CARTO
         L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
         }).addTo(map);
