@@ -58,3 +58,46 @@ header h1 { color: var(--book-green); margin-bottom: 5px; }
 .tag-pill { display: inline-block; background: var(--border-light); color: var(--book-green); padding: 3px 10px; border-radius: 12px; text-decoration: none; font-size: 0.85rem; margin-right: 5px; }
 .tag-pill:hover { background: var(--book-gold); color: white; }
 .resource-section { background:#fff; padding:20px; border:1px solid var(--border-light); border-radius:6px; margin-top:20px;}
+
+/* Milestone Labelled Lines */
+.timeline-milestone-marker {
+  text-align: center;
+  position: relative;
+  margin: 40px 0 30px -30px; /* Aligns correctly over the timeline track space */
+}
+.timeline-milestone-marker::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  border-top: 1px dashed var(--book-gold);
+  z-index: 1;
+}
+.timeline-milestone-marker span {
+  background: var(--book-cream); /* Blends into your parchment theme background */
+  padding: 0 15px;
+  color: var(--book-green);
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 2;
+}
+
+/* Cardless Historical Context Events */
+.timeline-event-text {
+  max-width: 500px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  padding: 5px 0 15px 0;
+}
+.timeline-event-text strong {
+  color: var(--book-green);
+  font-weight: 600;
+}
+.timeline-event-text em {
+  display: block;
+  color: var(--text-muted);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
