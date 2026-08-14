@@ -38,10 +38,12 @@
         // Initialise the map view over global coordinates
         var map = L.map('map').setView([20.0, 0.0], 2);
 
-        // Load light background tiles from OpenStreetMap/CARTO
-        L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+                // Load the official, standardized global OpenStreetMap tiles
+        L.tileLayer('https://openstreetmap.org{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a>'
         }).addTo(map);
+
 
         const urlParams = new URLSearchParams(window.location.search);
         const focusId = urlParams.get('focus');
