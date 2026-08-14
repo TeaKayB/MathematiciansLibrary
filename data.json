@@ -9,8 +9,9 @@
     "place_name": "Alexandria, Egypt",
     "coords": [31.2001, 29.9187],
     "tags": ["geometry", "antiquity", "textbook"],
-    "image": "https://unsplash.com",
-    "url": "books/euclid-elements.html"
+    "image": "images/covers/euclid.jpg",
+    "url": "books/euclid-elements.html",
+    "alt_text": "Title page detail of an early printed edition of Euclid's Elements, featuring geometric diagrams."
   },
   {
     "id": "newton-principia",
@@ -22,7 +23,8 @@
     "place_name": "Cambridge, UK",
     "coords": [52.2043, 0.1218],
     "tags": ["calculus", "physics", "scientific-revolution"],
-    "image": "https://unsplash.com",
-    "url": "books/newton-principia.html"
+    "image": "images/covers/newton.jpg",
+    "url": "books/newton-principia.html",
+    "alt_text": "The 1687 original leather-bound frontispiece of Isaac Newton's Principia Mathematica."
   }
 ]
