@@ -1,0 +1,28 @@
+[
+  {
+    "id": "euclid-elements",
+    "title": "Elements",
+    "author": "Euclid",
+    "chapter": 1,
+    "display_date": "~300 BC",
+    "sort_val": -300.00,
+    "place_name": "Alexandria, Egypt",
+    "coords": [31.2001, 29.9187],
+    "tags": ["geometry", "antiquity", "textbook"],
+    "image": "https://unsplash.com",
+    "url": "books/euclid-elements.html"
+  },
+  {
+    "id": "newton-principia",
+    "title": "Philosophiae Naturalis Principia Mathematica",
+    "author": "Isaac Newton",
+    "chapter": 2,
+    "display_date": "1687/07/05",
+    "sort_val": 1687.0705,
+    "place_name": "Cambridge, UK",
+    "coords": [52.2043, 0.1218],
+    "tags": ["calculus", "physics", "scientific-revolution"],
+    "image": "https://unsplash.com",
+    "url": "books/newton-principia.html"
+  }
+]
