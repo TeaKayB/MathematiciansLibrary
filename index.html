@@ -42,7 +42,7 @@
                 const target = document.getElementById('chapter-' + book.chapter + '-container');
                 if (target) {
                     target.innerHTML += '<div class="book-card">' +
-                        '<a href="' + book.url + '"><img src="' + book.image + '" alt="' + book.title + '"></a>' +
+                        '<a href="' + book.url + '"><img src="' + book.image + '" alt="' + book.alt_text + '"></a>' +
                         '<div class="card-title"><a href="' + book.url + '">' + book.title + '</a></div>' +
                         '<div class="meta-row">By ' + book.author + '</div>' +
                         '<div class="meta-row">Published: <a href="timeline.html#book-' + book.id + '">' + book.display_date + '</a></div>' +
