@@ -10,6 +10,7 @@
     "coords": [31.2001, 29.9187],
     "tags": ["geometry", "antiquity", "textbook"],
     "image": "images/covers/euclid.jpg",
+    "license": "CC BY-SA 4.0 / Sourced from Wikimedia Commons",
     "url": "books/euclid-elements.html",
     "alt_text": "Title page detail of an early printed edition of Euclid's Elements, featuring geometric diagrams."
   },
@@ -24,6 +25,7 @@
     "coords": [52.2043, 0.1218],
     "tags": ["calculus", "physics", "scientific-revolution"],
     "image": "images/covers/newton.jpg",
+    "license": "CC BY-SA 4.0 / Sourced from Wikimedia Commons",
     "url": "books/newton-principia.html",
     "alt_text": "The 1687 original leather-bound frontispiece of Isaac Newton's Principia Mathematica."
   }
