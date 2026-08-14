@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Global Map Archives</title>
     
-    <    <!-- 1. Global Core Stylesheets (Switched to jsDelivr to completely bypass Cloudflare) -->
+    <!-- 1. Leaflet Map CSS Style Layer (Using jsDelivr CDN) -->
     <link rel="stylesheet" href="https://jsdelivr.net" />
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- 2. Remote Mapping Library Scripts -->
+    <!-- 2. Leaflet Map Engine JavaScript (Using jsDelivr CDN) -->
     <script src="https://jsdelivr.net"></script>
-        
 </head>
 <body>
 
@@ -31,17 +30,16 @@
     <h2>Geographic Archive Explorer</h2>
     <p>Click any location marker to view the mathematical works produced there.</p>
     
-    <!-- The physical container where the map renders -->
+    <!-- This is the box where the map renders -->
     <div id="map"></div>
 </main>
 
-<!-- 3. Your Custom Tracking Scripts (Fired safely after the page loads) -->
 <script>
     window.addEventListener('DOMContentLoaded', () => {
-        // Initialize the base global view [latitude, longitude], zoom level
+        // Initialise the map view over global coordinates
         var map = L.map('map').setView([20.0, 0.0], 2);
 
-        // Load light, neutral map tile overlays
+        // Load light background tiles
         L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
         }).addTo(map);
@@ -67,7 +65,7 @@
                         
                         marker.bindPopup(popupContent);
 
-                        // If linked directly from an individual page, fly straight to it
+                        // Auto-zoom if linked from a specific page
                         if (focusId && book.id === focusId) {
                             map.setView(book.coords, 7);
                             setTimeout(() => marker.openPopup(), 400);
