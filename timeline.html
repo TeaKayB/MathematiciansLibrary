@@ -24,23 +24,50 @@
 </main>
 <script>
     fetch('data.json')
-        .then(res => res.json())
-        .then(books => {
-            books.sort((a, b) => a.sort_val - b.sort_val);
-            const container = document.getElementById('timeline-target');
-            books.forEach(book => {
-                container.innerHTML += '<div class="timeline-item" id="book-' + book.id + '">' +
-                    '<div class="book-card" style="max-width: 500px;">' +
-                    '<div class="card-title" style="font-size:1.2rem;"><a href="' + book.url + '">' + book.title + '</a></div>' +
-                    '<div class="meta-row"><strong>Date:</strong> ' + book.display_date + ' | <strong>Author:</strong> ' + book.author + '</div>' +
-                    '<div class="meta-row">📍 Located: <a href="map.html?focus=' + book.id + '">' + book.place_name + '</a></div>' +
-                    '</div></div>';
-            });
-            if(window.location.hash) {
-                const el = document.getElementById(window.location.hash.substring(1));
-                if(el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 300);
+    .then(res => res.json())
+    .then(books => {
+        books.sort((a, b) => a.sort_val - b.sort_val);
+        const container = document.getElementById('timeline-target');
+        
+        books.forEach(item => {
+            // Layout A: The Milestone Labelled Line
+            if (item.type === 'milestone') {
+                container.innerHTML += `
+                    <div class="timeline-milestone-marker" id="milestone-${item.id}">
+                        <span>— ${item.label} (${item.display_date}) —</span>
+                    </div>`;
+            }
+            
+            // Layout B: Cardless Text Historical Context
+            else if (item.type === 'event') {
+                container.innerHTML += `
+                    <div class="timeline-item" id="event-${item.id}">
+                        <div class="timeline-event-text">
+                            <strong>${item.display_date} • ${item.title}</strong>
+                            <em>${item.context_description} (📍 Region: ${item.place_name})</em>
+                        </div>
+                    </div>`;
+            }
+            
+            // Layout C: Premium Featured Book Card
+            else if (item.type === 'book' || !item.type) {
+                container.innerHTML += `
+                    <div class="timeline-item" id="book-${item.id}">
+                        <div class="book-card" style="max-width: 500px;">
+                            <div class="card-title" style="font-size:1.2rem;"><a href="${item.url}">${item.title}</a></div>
+                            <div class="meta-row"><strong>Date:</strong> ${item.display_date} | <strong>Author:</strong> ${item.author}</div>
+                            <div class="meta-row">📍 Located: <a href="map.html?focus=${item.id}">${item.place_name}</a></div>
+                        </div>
+                    </div>`;
             }
         });
+
+        if(window.location.hash) {
+            const el = document.getElementById(window.location.hash.substring(1));
+            if(el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 300);
+        }
+    });
+
 </script>
 </body>
 </html>
