@@ -28,5 +28,43 @@
     "license": "CC BY-SA 4.0 / Sourced from Wikimedia Commons",
     "url": "books/newton-principia.html",
     "alt_text": "An old, slightly stained parchment title page of Sir Isaac Newton's book, 'Philosophiæ Naturalis Principia Mathematica,' printed in 1687. The Latin text is printed in a classic serif font inside a simple double-bordered rectangular frame, featuring the book's title prominently at the top, followed by Newton's name, an official printing approval signed by Samuel Pepys dated 1686, and the publication details for London in Roman numerals at the bottom."
+  },
+{
+    "id": "upper-paleolithic-era",
+    "type": "milestone",
+    "display_date": "~20,000 BC",
+    "sort_val": -20000.00,
+    "label": "The Paleolithic Era (Early Counting Marks)"
+  },
+{
+    "id": "ishango-bone",
+    "type": "book",
+    "title": "The Ishango Bone",
+    "author": "Unknown Maker",
+    "chapter": 1,
+    "display_date": "~20,000 BC",
+    "sort_val": -20000.01,
+    "place_name": "Democratic Republic of the Congo",
+    "coords": [-0.1197, 29.2847],
+    "tags": ["antiquity", "tallying"],
+    "image": "images/covers/ishango.jpg",
+    "url": "books/ishango-bone.html",
+    "alt_text": "A close up of the dark brown Ishango tally bone featuring etched prime number groupings."
+  },
+  {
+    "id": "crossover-point",
+    "type": "milestone",
+    "display_date": "1 BCE / 1 CE",
+    "sort_val": 0.00,
+    "label": "Crossover Point (BCE to CE)"
+  },
+  {
+    "id": "house-of-wisdom-founded",
+    "type": "event",
+    "title": "Foundation of the House of Wisdom",
+    "display_date": "~800",
+    "sort_val": 800.00,
+    "place_name": "Baghdad, Iraq",
+    "context_description": "The Grand Library of Baghdad is established, becoming the world's primary hub for translating ancient Greek and Indian mathematical manuscripts into Arabic."
   }
 ]
