@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Global Map Archives</title>
-    <link rel="stylesheet" href="https://unpkg.com" />
+    
+    <!-- 1. Global Core Stylesheets (Leaflet must come first) -->
+    <link rel="stylesheet" href="https://unpkg.com" crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com"></script>
+    
+    <!-- 2. Remote Mapping Library Scripts -->
+    <script src="https://unpkg.com" crossorigin=""></script>
 </head>
 <body>
+
 <header>
     <h1>The Mathematicians' Library</h1>
     <p>Official Digital Appendix & Companion Hub</p>
@@ -20,38 +25,57 @@
         <a href="about.html" class="nav-btn" id="nav-about">About</a>
     </div>
 </header>
+
 <main>
     <h2>Geographic Archive Explorer</h2>
     <p>Click any location marker to view the mathematical works produced there.</p>
+    
+    <!-- The physical container where the map renders -->
     <div id="map"></div>
 </main>
+
+<!-- 3. Your Custom Tracking Scripts (Fired safely after the page loads) -->
 <script>
-    var map = L.map('map').setView([20, 0], 2);
-    L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-    }).addTo(map);
-    const urlParams = new URLSearchParams(window.location.search);
-    const focusId = urlParams.get('focus');
-    fetch('data.json')
-        .then(res => res.json())
-        .then(books => {
-            books.forEach(book => {
-                if (book.coords) {
-                    const marker = L.marker(book.coords).addTo(map);
-                    const popupContent = '<div style="font-family:sans-serif; max-width:180px;">' +
-                        '<img src="' + book.image + '" style="width:100%; height:90px; object-fit:cover; border-radius:3px;">' +
-                        '<b style="color:#1c5235; display:block; margin-top:5px;">' + book.title + '</b>' +
-                        '<span style="font-size:11px; color:#666;">' + book.display_date + '</span><br>' +
-                        '<a href="' + book.url + '" style="color:#b84a39; font-weight:bold; text-decoration:none; font-size:12px; display:inline-block; margin-top:5px;">View Tools →</a>' +
-                        '</div>';
-                    marker.bindPopup(popupContent);
-                    if (focusId && book.id === focusId) {
-                        map.setView(book.coords, 7);
-                        setTimeout(() => marker.openPopup(), 400);
+    window.addEventListener('DOMContentLoaded', () => {
+        // Initialize the base global view [latitude, longitude], zoom level
+        var map = L.map('map').setView([20.0, 0.0], 2);
+
+        // Load light, neutral map tile overlays
+        L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const focusId = urlParams.get('focus');
+
+        // Fetch your database file
+        fetch('data.json')
+            .then(res => res.json())
+            .then(books => {
+                books.forEach(book => {
+                    if (book.coords && book.coords.length === 2) {
+                        const marker = L.marker(book.coords).addTo(map);
+                        
+                        const popupContent = `
+                            <div style="font-family:sans-serif; max-width:180px;">
+                                <img src="${book.image}" style="width:100%; height:90px; object-fit:cover; border-radius:3px;">
+                                <b style="color:#1c5235; display:block; margin-top:5px;">${book.title}</b>
+                                <span style="font-size:11px; color:#666;">${book.display_date}</span><br>
+                                <a href="${book.url}" style="color:#b84a39; font-weight:bold; text-decoration:none; font-size:12px; display:inline-block; margin-top:5px;">View Tools →</a>
+                            </div>`;
+                        
+                        marker.bindPopup(popupContent);
+
+                        // If linked directly from an individual page, fly straight to it
+                        if (focusId && book.id === focusId) {
+                            map.setView(book.coords, 7);
+                            setTimeout(() => marker.openPopup(), 400);
+                        }
                     }
-                }
-            });
-        });
+                });
+            })
+            .catch(err => console.error('Error fetching data.json:', err));
+    });
 </script>
 </body>
 </html>
