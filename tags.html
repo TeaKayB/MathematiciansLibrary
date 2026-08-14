@@ -51,7 +51,7 @@
         container.innerHTML = '';
         masterBooks.forEach(book => {
             container.innerHTML += '<div class="book-card">' +
-                '<a href="' + book.url + '"><img src="' + book.image + '" alt="' + book.title + '"></a>' +
+                '<a href="' + book.url + '"><img src="' + book.image + '" alt="' + book.alt_text + '"></a>' +
                 '<div class="card-title"><a href="' + book.url + '">' + book.title + '</a></div>' +
                 '<div class="meta-row">By ' + book.author + '</div>' +
                 '<div class="meta-row">Date: ' + book.display_date + '</div>' +
