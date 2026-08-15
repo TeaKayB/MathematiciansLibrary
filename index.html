@@ -38,6 +38,11 @@
     fetch('data.json')
         .then(res => res.json())
         .then(books => {
+            
+            // 1. ADD THIS ONE LINE RIGHT HERE TO FIX THE ORDER:
+            books.sort((a, b) => a.sort_val - b.sort_val);
+
+            // 2. Leave your existing card generation code untouched:
             books.forEach(book => {
                 const target = document.getElementById('chapter-' + book.chapter + '-container');
                 if (target) {
@@ -50,7 +55,9 @@
                         '</div>';
                 }
             });
-        });
+        })
+        .catch(err => console.error('Error loading data.json:', err));
 </script>
+
 </body>
 </html>
