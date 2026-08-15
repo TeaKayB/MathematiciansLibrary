@@ -1,6 +1,7 @@
 [
   {
     "id": "euclid-elements",
+    "type": "book",
     "title": "Elements",
     "author": "Euclid",
     "chapter": 1,
@@ -16,6 +17,7 @@
   },
   {
     "id": "newton-principia",
+    "type": "book",
     "title": "Philosophiae Naturalis Principia Mathematica",
     "author": "Isaac Newton",
     "chapter": 2,
