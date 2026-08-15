@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
     <h1>The Mathematicians' Library</h1>
     <p>Official Digital Appendix & Companion Hub</p>
@@ -18,32 +19,83 @@
         <a href="about.html" class="nav-btn" id="nav-about">About</a>
     </div>
 </header>
+
 <main>
     <h2>Browse by Chapter</h2>
+    
+    <!-- Chapter 0 -->
     <section class="chapter-block">
-        <h3>Chapter 1: Foundations of Geometry</h3>
+        <h3>Chapter 0: Introduction</h3>
+        <div class="grid-list" id="chapter-0-container"></div>
+    </section>
+
+    <!-- Chapter 1 -->
+    <section class="chapter-block">
+        <h3>Chapter 1: The Origins of Mathematics</h3>
         <div class="grid-list" id="chapter-1-container"></div>
     </section>
+
+    <!-- Chapter 2 -->
     <section class="chapter-block">
-        <h3>Chapter 2: The Age of Revolution</h3>
+        <h3>Chapter 2: Prehistoric</h3>
         <div class="grid-list" id="chapter-2-container"></div>
     </section>
+
+    <!-- Chapter 3 -->
+    <section class="chapter-block">
+        <h3>Chapter 3: The Global Evolution of Mathematics</h3>
+        <div class="grid-list" id="chapter-3-container"></div>
+    </section>
+
+    <!-- Chapter 4 -->
+    <section class="chapter-block">
+        <h3>Chapter 4: The Scientific Revolution</h3>
+        <div class="grid-list" id="chapter-4-container"></div>
+    </section>
+
+    <!-- Chapter 5 -->
+    <section class="chapter-block">
+        <h3>Chapter 5: Modern Mathematics</h3>
+        <div class="grid-list" id="chapter-5-container"></div>
+    </section>
+
+    <!-- Chapter 6 -->
+    <section class="chapter-block">
+        <h3>Chapter 6: The Future</h3>
+        <div class="grid-list" id="chapter-6-container"></div>
+    </section>
+
+    <!-- Chapter 7 -->
+    <section class="chapter-block">
+        <h3>Chapter 7: Bibliography</h3>
+        <div class="grid-list" id="chapter-7-container"></div>
+    </section>
+
+    <!-- Chapter 8 -->
+    <section class="chapter-block">
+        <h3>Chapter 8: Beyond the Book</h3>
+        <div class="grid-list" id="chapter-8-container"></div>
+    </section>
 </main>
+
 <footer class="companion-footer">
     <h3>📖 Extend Your Journey</h3>
     <p>This web archive hosts raw files and educational resource arrays. The deeper historical narratives, biographical details, and analytical arcs live in <strong>The Mathematicians' Library</strong> book.</p>
     <a href="https://your-purchase-link.com" target="_blank">Order Your Copy Here →</a>
 </footer>
+
 <script>
     fetch('data.json')
         .then(res => res.json())
         .then(books => {
+            // Filter to include only actual books for the homepage grid
+            const onlyBooks = books.filter(b => b.type === 'book' || !b.type);
             
-            // 1. ADD THIS ONE LINE RIGHT HERE TO FIX THE ORDER:
-            books.sort((a, b) => a.sort_val - b.sort_val);
+            // Sort books chronologically by their sort_val attribute
+            onlyBooks.sort((a, b) => a.sort_val - b.sort_val);
 
-            // 2. Leave your existing card generation code untouched:
-            books.forEach(book => {
+            // Populate active cards into their designated chapter rows
+            onlyBooks.forEach(book => {
                 const target = document.getElementById('chapter-' + book.chapter + '-container');
                 if (target) {
                     target.innerHTML += '<div class="book-card">' +
@@ -55,9 +107,24 @@
                         '</div>';
                 }
             });
+
+            // Loop through all containers to automatically append a "Coming Soon" banner if the chapter is currently empty
+            for (let i = 0; i <= 8; i++) {
+                const container = document.getElementById('chapter-' + i + '-container');
+                if (container && container.children.length === 0) {
+                    // Gray out the heading slightly to show it is pending
+                    container.parentElement.classList.add('opacity-muted');
+                    
+                    // Inject the status banner directly into the empty block
+                    container.innerHTML = '<div class="chapter-status-banner">' +
+                        '<p><strong>Status:</strong> Cataloguing primary text facsimiles and preparing interactive aids.</p>' +
+                        '<p>☕ Want to unlock this chapter next? Sponsoring a writing milestone helps me secure time away from my main desk to build these resources sooner.</p>' +
+                        '<a href="about.html#commissions" class="funding-link">View Support Channels & Milestones →</a>' +
+                        '</div>';
+                }
+            }
         })
         .catch(err => console.error('Error loading data.json:', err));
 </script>
-
 </body>
 </html>
