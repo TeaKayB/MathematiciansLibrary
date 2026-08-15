@@ -100,4 +100,62 @@ header h1 { color: var(--book-green); margin-bottom: 5px; }
   margin-top: 3px;
   line-height: 1.4;
 }
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE OVERRIDES
+   ========================================================================== */
+
+/* Finger-friendly updates for the main menu bar */
+.nav-menu {
+  gap: 8px;
+}
+
+.nav-btn {
+  padding: 8px 12px; /* Marginally taller target for thumb-taps */
+  font-size: 0.9rem;
+  text-align: center;
+  flex: 1 1 auto; /* Allows menu bars to scale down on tight widths */
+}
+
+/* Mobile Screens (Phones under 600px wide) */
+@media (max-width: 600px) {
+  body {
+    padding: 12px; /* Reclaims horizontal reading space */
+  }
+
+  header h1 {
+    font-size: 1.8rem; /* Prevents long book titles from spilling over */
+  }
+
+  /* Force the grids to collapse into single, readable column vertical stacks */
+  .grid-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Adjust the book card images so they don't look overly stretched vertically */
+  .book-card img {
+    height: 240px; 
+  }
+
+  /* Give the timeline axis a comfortable, compact indent layout */
+  .timeline-container {
+    padding-left: 20px;
+  }
+  .timeline-container::before {
+    left: 4px;
+  }
+  .timeline-item::before {
+    left: -21px;
+    top: 24px;
+  }
+  .timeline-milestone-marker {
+    margin-left: -20px;
+    font-size: 0.85rem;
+  }
+  
+  /* Shrink down map height slightly so it doesn't hijack the phone's scroll */
+  #map {
+    height: 380px;
+  }
+}
 
