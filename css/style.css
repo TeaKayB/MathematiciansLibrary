@@ -1,3 +1,7 @@
+/* ==========================================================================
+   THE MATHEMATICIANS' LIBRARY - CORE BRAND SPECIFICATION
+   ========================================================================== */
+
 :root {
   --book-green: #1c5235;
   --book-cream: #fbf9f3;
@@ -9,153 +13,168 @@
   --border-light: #e6eae7;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  color: var(--text-primary);
+/* Base Document Configuration */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   background-color: var(--book-cream);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
+  color: var(--text-primary);
 }
 
+/* Master Grid Structure: Left Spine & Right Content */
+body {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+/* ==========================================================================
+   COMPONENT 1: THE BOOK SPINE SIDEBAR
+   ========================================================================== */
+.book-spine-sidebar {
+  grid-column: 1;
+  background-color: var(--book-green);
+  border-right: 4px solid var(--book-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.spine-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg); /* Flips typography so it reads upward, matching classic binding */
+  color: var(--book-cream);
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   COMPONENT 2: THE MAIN WINDOW CONTENT
+   ========================================================================== */
+.site-content-wrapper {
+  grid-column: 2;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+/* Celestial Border Frame Motif */
 header {
-  border-bottom: 2px solid var(--border-light);
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+  border-bottom: 2px solid var(--book-gold);
+  border-image: repeating-linear-gradient(90deg, var(--book-gold), var(--book-gold) 10px, transparent 10px, transparent 20px) 2;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
 }
 
-header h1 { color: var(--book-green); margin-bottom: 5px; }
+header h1 { 
+  color: var(--book-green); 
+  font-family: Georgia, serif; 
+  font-size: 2.4rem; 
+  margin: 0 0 8px 0; 
+}
 
-.nav-menu { display: flex; align-items: center; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
-.nav-label { font-weight: bold; color: var(--text-muted); }
+/* Navigation Dashboard Links */
+.nav-menu { display: flex; align-items: center; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.nav-label { font-weight: bold; color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .nav-btn {
   background: var(--bg-white); border: 1px solid var(--border-light);
-  padding: 6px 14px; border-radius: 4px; text-decoration: none; color: var(--book-green); font-weight: 500;
+  padding: 8px 16px; border-radius: 4px; text-decoration: none; color: var(--book-green); font-weight: 500;
+  transition: all 0.2s ease;
 }
+.nav-btn:hover { border-color: var(--book-terracotta); color: var(--book-terracotta); }
 .nav-btn.active { background: var(--book-green); color: var(--bg-white); border-color: var(--book-gold); }
 
-.grid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; list-style: none; padding: 0; }
+/* Core Layout Component Card Containers */
+.grid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px; list-style: none; padding: 0; margin-top: 20px; }
 .book-card {
   background: var(--bg-white); border: 1px solid var(--border-light); border-radius: 6px;
-  padding: 15px; display: flex; flex-direction: column; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  padding: 18px; display: flex; flex-direction: column; box-shadow: 0 4px 6px rgba(28,82,53,0.02);
+  transition: transform 0.2s ease;
 }
-.book-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; background: #eee; margin-bottom: 12px; }
-.card-title a { color: var(--book-green); text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+.book-card:hover { transform: translateY(-3px); border-color: var(--book-gold); }
+.book-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 4px; background: #eee; margin-bottom: 14px; }
+.card-title a { color: var(--book-green); text-decoration: none; font-weight: bold; font-size: 1.15rem; font-family: Georgia, serif; }
 .card-title a:hover { color: var(--book-terracotta); }
-.meta-row { font-size: 0.85rem; color: var(--text-muted); margin: 4px 0; }
-.meta-row a { color: var(--book-terracotta); text-decoration: none; }
+.meta-row { font-size: 0.85rem; color: var(--text-muted); margin: 5px 0; }
+.meta-row a { color: var(--book-terracotta); text-decoration: none; font-weight: 500; }
 
-.companion-footer { background: var(--bg-white); border: 1px solid var(--border-light); border-top: 3px solid var(--book-gold); padding: 20px; margin-top: 50px; border-radius: 4px; }
-.companion-footer a { color: var(--book-terracotta); font-weight: bold; }
+/* Inactive/Pending Chapter Content States */
+.opacity-muted { opacity: 0.85; }
+.chapter-status-banner {
+  background-color: #f5f1e3; border: 1px dashed var(--book-gold); border-left: 4px solid var(--book-gold);
+  padding: 18px; margin: 15px 0 25px 0; border-radius: 4px; font-size: 0.95rem;
+}
+.funding-link { color: var(--book-terracotta); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 8px; }
+.funding-link:hover { text-decoration: underline; }
 
-.timeline-container { position: relative; padding-left: 30px; margin-top: 30px; }
-.timeline-container::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--book-gold); }
-.timeline-item { position: relative; margin-bottom: 25px; }
-.timeline-item::before { content: ''; position: absolute; left: -25px; top: 28px; width: 10px; height: 10px; border-radius: 50%; background: var(--book-terracotta); }
+/* Timeline Interface Architecture Tracks */
+.timeline-container { position: relative; padding-left: 35px; margin-top: 30px; }
+.timeline-container::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px; background: var(--book-gold); }
+.timeline-item { position: relative; margin-bottom: 30px; }
+.timeline-item::before { content: ''; position: absolute; left: -27px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--book-terracotta); }
 
-#map { width: 100%; height: 550px; border-radius: 6px; border: 1px solid var(--border-light); margin-top: 20px; }
-.tag-pill { display: inline-block; background: var(--border-light); color: var(--book-green); padding: 3px 10px; border-radius: 12px; text-decoration: none; font-size: 0.85rem; margin-right: 5px; }
+.timeline-milestone-marker { text-align: center; position: relative; margin: 45px 0 35px -35px; }
+.timeline-milestone-marker::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; border-top: 1px dashed var(--book-gold); z-index: 1; }
+.timeline-milestone-marker span { background: var(--book-cream); padding: 0 15px; color: var(--book-green); font-weight: bold; font-size: 0.95rem; position: relative; z-index: 2; font-family: Georgia, serif; }
+.timeline-event-text { max-width: 550px; font-size: 0.95rem; line-height: 1.5; }
+.timeline-event-text strong { color: var(--book-green); }
+.timeline-event-text em { display: block; color: var(--text-muted); margin-top: 4px; }
+
+/* Mapping Framework Containers */
+#map { width: 100%; height: 580px; border-radius: 6px; border: 1px solid var(--border-light); margin-top: 20px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); }
+
+/* Thematic Filters & Static Assets */
+.tag-pill { display: inline-block; background: var(--border-light); color: var(--book-green); padding: 4px 12px; border-radius: 12px; text-decoration: none; font-size: 0.85rem; margin-right: 6px; font-weight: 500; }
 .tag-pill:hover { background: var(--book-gold); color: white; }
-.resource-section { background:#fff; padding:20px; border:1px solid var(--border-light); border-radius:6px; margin-top:20px;}
+.resource-section { background:#fff; padding:22px; border:1px solid var(--border-light); border-radius:6px; margin-top:20px; box-shadow: 0 2px 4px rgba(0,0,0,0.01); }
 
-/* Milestone Labelled Lines */
-.timeline-milestone-marker {
-  text-align: center;
-  position: relative;
-  margin: 40px 0 30px -30px; /* Aligns correctly over the timeline track space */
+/* Ornate Celestial Footer Frame Banner */
+.companion-footer {
+  background: var(--bg-white); border: 1px solid var(--border-light);
+  border-top: 4px double var(--book-gold); /* Double track line mimicking engraving borders */
+  border-bottom: 4px double var(--book-gold);
+  padding: 25px; margin-top: 60px; border-radius: 4px;
 }
-.timeline-milestone-marker::before {
-  content: "";
-  position: absolute;
-  top: 50%; left: 0; right: 0;
-  border-top: 1px dashed var(--book-gold);
-  z-index: 1;
-}
-.timeline-milestone-marker span {
-  background: var(--book-cream); /* Blends into your parchment theme background */
-  padding: 0 15px;
-  color: var(--book-green);
-  font-weight: bold;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  position: relative;
-  z-index: 2;
-}
+.companion-footer h3 { margin-top: 0; color: var(--book-green); font-family: Georgia, serif; }
+.companion-footer a { color: var(--book-terracotta); font-weight: bold; text-decoration: none; }
+.companion-footer a:hover { text-decoration: underline; }
 
-/* Cardless Historical Context Events */
-.timeline-event-text {
-  max-width: 500px;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  padding: 5px 0 15px 0;
-}
-.timeline-event-text strong {
-  color: var(--book-green);
-  font-weight: 600;
-}
-.timeline-event-text em {
-  display: block;
-  color: var(--text-muted);
-  margin-top: 3px;
-  line-height: 1.4;
-}
 /* ==========================================================================
-   MOBILE & TABLET RESPONSIVE OVERRIDES
+   INTERCONNECTED RESPONSIVE INTERFACE MEDIA OVERRIDES
    ========================================================================== */
-
-/* Finger-friendly updates for the main menu bar */
-.nav-menu {
-  gap: 8px;
-}
-
-.nav-btn {
-  padding: 8px 12px; /* Marginally taller target for thumb-taps */
-  font-size: 0.9rem;
-  text-align: center;
-  flex: 1 1 auto; /* Allows menu bars to scale down on tight widths */
-}
-
-/* Mobile Screens (Phones under 600px wide) */
-@media (max-width: 600px) {
-  body {
-    padding: 12px; /* Reclaims horizontal reading space */
+@media (max-width: 768px) {
+  /* On tablets and smaller screens, stack the spine bar to the top of the viewport */
+  body { grid-template-columns: 1fr; }
+  
+  .book-spine-sidebar {
+    grid-column: 1; height: 50px; width: 100%; position: relative;
+    border-right: none; border-bottom: 3px solid var(--book-gold);
+    padding: 0; justify-content: center; align-items: center;
   }
-
-  header h1 {
-    font-size: 1.8rem; /* Prevents long book titles from spilling over */
-  }
-
-  /* Force the grids to collapse into single, readable column vertical stacks */
-  .grid-list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  /* Adjust the book card images so they don't look overly stretched vertically */
-  .book-card img {
-    height: 240px; 
-  }
-
-  /* Give the timeline axis a comfortable, compact indent layout */
-  .timeline-container {
-    padding-left: 20px;
-  }
-  .timeline-container::before {
-    left: 4px;
-  }
-  .timeline-item::before {
-    left: -21px;
-    top: 24px;
-  }
-  .timeline-milestone-marker {
-    margin-left: -20px;
-    font-size: 0.85rem;
+  .spine-text {
+    writing-mode: horizontal-tb; transform: none;
+    font-size: 1rem; letter-spacing: 0.2em; padding: 0;
   }
   
-  /* Shrink down map height slightly so it doesn't hijack the phone's scroll */
-  #map {
-    height: 380px;
-  }
+  .site-content-wrapper { grid-column: 1; padding: 20px; }
 }
 
+@media (max-width: 480px) {
+  header h1 { font-size: 1.8rem; }
+  .grid-list { grid-template-columns: 1fr; gap: 16px; }
+  .book-card img { height: 230px; }
+  #map { height: 380px; }
+  .nav-menu { gap: 6px; }
+  .nav-btn { padding: 6px 10px; font-size: 0.85rem; flex: 1 1 auto; text-align: center; }
+}
