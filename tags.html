@@ -35,12 +35,18 @@
     const targetTag = urlParams.get('tag');
     let masterBooks = [];
     if(targetTag) document.getElementById('active-tag-label').innerText = '#' + targetTag;
-    fetch('data.json')
+        fetch('data.json')
         .then(res => res.json())
         .then(books => {
-            masterBooks = targetTag ? books.filter(b => b.tags.includes(targetTag)) : books;
+            // FILTER: Keep only items where type is 'book' (or missing, which defaults to book)
+            // This safely sweeps away milestones and events so they don't cause errors here
+            const onlyBooks = books.filter(b => b.type === 'book' || !b.type);
+
+            // Now apply the tag filtering to ONLY the book array
+            masterBooks = targetTag ? onlyBooks.filter(b => b.tags.includes(targetTag)) : onlyBooks;
             renderCards();
         });
+
     document.getElementById('sort-select').addEventListener('change', renderCards);
     function renderCards() {
         const sortType = document.getElementById('sort-select').value;
