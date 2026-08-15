@@ -178,3 +178,65 @@ header h1 {
   .nav-menu { gap: 6px; }
   .nav-btn { padding: 6px 10px; font-size: 0.85rem; flex: 1 1 auto; text-align: center; }
 }
+/* ==========================================================================
+   INDIVIDUAL BOOK RESOUCE PAGE PROFILE LAYOUTS
+   ========================================================================== */
+.back-link-wrapper { margin-top: 0; margin-bottom: 20px; }
+.back-link { color: var(--book-terracotta); text-decoration: none; font-weight: bold; }
+.back-link:hover { text-decoration: underline; }
+
+/* The side-by-side flex engine split container */
+.book-profile-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.book-profile-cover {
+  flex: 0 0 220px; /* Locks the image box width tightly */
+  max-width: 220px;
+}
+.book-profile-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 10px rgba(28,82,53,0.06);
+  display: block;
+}
+
+.book-profile-meta {
+  flex: 1; /* Allows text to reclaim remaining horizontal area */
+}
+.book-main-title {
+  margin: 0 0 10px 0 !important;
+  font-size: 2.2rem !important;
+  line-height: 1.2;
+}
+.book-main-author {
+  margin: 0 0 15px 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+.book-main-tags {
+  margin-top: 20px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 15px;
+}
+
+/* Responsive collapse rule for tight smartphone glass */
+@media (max-width: 550px) {
+  .book-profile-flex {
+    flex-direction: column; /* Stacks image directly over text on tight screens */
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .book-profile-cover {
+    max-width: 180px; /* Slims image footprint slightly on phones */
+  }
+  .book-main-title {
+    font-size: 1.6rem !important;
+  }
+}
