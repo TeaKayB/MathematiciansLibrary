@@ -29,6 +29,20 @@ body {
   grid-template-columns: 60px 1fr;
 }
 
+/* Universal Link Styling (Banish Browser Blue Site-Wide) */
+a {
+  color: var(--book-terracotta);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Clear hover state behavior for all links */
+a:hover {
+  color: var(--book-green);
+  text-decoration: underline;
+}
+
+
 /* ==========================================================================
    COMPONENT 1: THE BOOK SPINE SIDEBAR
    ========================================================================== */
