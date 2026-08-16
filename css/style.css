@@ -254,3 +254,27 @@ header h1 {
     font-size: 1.6rem !important;
   }
 }
+/* Responsive Full-Width Embed Components */
+.embed-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+/* Forces the embedded window to stretch cleanly to its box margins */
+.embed-container iframe {
+  width: 100% !important;
+  border: 0;
+}
+
+/* Aspect ratio boxes to keep simulators or players looking sharp */
+.ratio-16-9 { padding-top: 56.25%; } /* Standard widescreen videos */
+.ratio-4-3  { padding-top: 75%; }    /* Traditional math tools or grids */
+
+.embed-container iframe {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+}
+
