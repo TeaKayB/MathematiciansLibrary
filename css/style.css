@@ -279,38 +279,41 @@ header h1 {
 }
 
 /* ==========================================================================
-   ACCESSIBLE & COMPLIANT HEADER TYPOGRAPHY HIERARCHY
+   THE STACKS - PREMIUM SMALL-CAPS DESIGN RECALIBRATION
    ========================================================================== */
 
-/* Main Header Title: Deep Heritage Green for strong 4.5+ contrast */
+/* Main Header Title: Made deliberately smaller to pass the spotlight down */
 header h1 {
   color: var(--book-green) !important;
   font-family: Georgia, serif;
-  font-size: 1.9rem !important;
+  font-size: 1.6rem !important; /* Shrunk down significantly from 2.4rem/1.9rem */
   margin: 0;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 500; /* Lighter weight softens its presence */
 }
 
-/* Sub-brand 'The Stacks': Bold layout with clear structural separation */
+/* Sub-brand 'The Stacks': Scaled up to become the primary visual hero */
 .stacks-subtitle {
   display: block;
-  font-size: 1.35rem;
+  font-size: 1.45rem; /* Noticeably larger presence on the canvas */
   font-family: Georgia, serif;
   font-weight: 800;
-  color: var(--text-primary) !important; /* High-contrast dark tone meeting WCAG standards */
+  color: var(--text-primary) !important;
   letter-spacing: 7px;
   text-transform: uppercase;
-  margin-top: 12px;
-  padding-top: 8px;
+  margin-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--book-gold);
   width: 100%;
 }
 
-/* Terracotta capital letter highlights */
+/* Initial Letter Styling: Heavily pronounced sizes to anchor the small-caps layout */
 .stacks-subtitle span {
   color: var(--book-terracotta) !important;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.9rem; /* Pushed up significantly from 1.5rem to create a striking contrast */
+  display: inline-block;
+  transform: translateY(1px); /* Subtly balances the baseline weight of the larger font */
 }
+
 
