@@ -13,7 +13,7 @@
   --border-light: #e6eae7;
 }
 
-/* Base Document Configuration */
+/* Base Document Configuration (Ensure this is normal, clean text) */
 html, body {
   margin: 0;
   padding: 0;
@@ -21,8 +21,9 @@ html, body {
   background-color: var(--book-cream);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
   color: var(--text-primary);
-   font-style: normal !important;
+  font-style: normal !important; /* Forces all body text back to clean, upright standard typography */
 }
+
 
 /* Master Grid Structure: Left Spine & Right Content */
 body {
