@@ -279,42 +279,53 @@ header h1 {
 }
 
 /* ==========================================================================
-   THE STACKS - PREMIUM SMALL-CAPS DESIGN RECALIBRATION
+   THE STACKS - MASTER TYPOGRAPHY BRANDING UPDATE WITH HANGING SYMBOL
    ========================================================================== */
 
-/* Main Header Title: Made deliberately smaller to pass the spotlight down */
+/* Main Header Title: Made bold, tiny, and tightly tracked like an imprint label */
 header h1 {
   color: var(--book-green) !important;
   font-family: Georgia, serif;
-  font-size: 1.6rem !important; /* Shrunk down significantly from 2.4rem/1.9rem */
-font-weight: bold;
+  font-size: 1.15rem !important; /* Shrunk down to act as a crisp secondary tag */
+  font-weight: 800 !important;   /* Made heavy and bold to anchor its authority */
+  text-transform: uppercase;     /* Switched to uppercase to give it a sharp structural feel */
+  letter-spacing: 2px;          /* Tracked out slightly to balance the boldness */
   margin: 0;
   line-height: 1.2;
-  font-weight: 500; /* Lighter weight softens its presence */
 }
 
-/* Sub-brand 'The Stacks': Scaled up to become the primary visual hero */
+/* Sub-brand 'The Stacks': The undisputed visual hero of the layout */
 .stacks-subtitle {
   display: block;
-  font-size: 1.45rem; /* Noticeably larger presence on the canvas */
+  font-size: 1.55rem; /* Amplified slightly more for major canvas dominance */
   font-family: Georgia, serif;
   font-weight: 800;
   color: var(--text-primary) !important;
   letter-spacing: 7px;
   text-transform: uppercase;
   margin-top: 14px;
-  padding-top: 10px;
+  padding-top: 12px;
   border-top: 1px solid var(--book-gold);
   width: 100%;
 }
 
-/* Initial Letter Styling: Heavily pronounced sizes to anchor the small-caps layout */
-.stacks-subtitle span {
+/* Hanging Structural Symbol Styling */
+.stacks-branch-symbol {
+  color: var(--book-gold) !important; /* Painted in gold to create a beautiful 3-colour harmony */
+  font-size: 1.7rem !important;        /* Large enough to match the initial caps footprint */
+  font-weight: 400 !important;        /* Kept lighter so it doesn't look bulky */
+  margin-right: 8px;                  /* Clean, intentional horizontal spacing */
+  letter-spacing: 0 !important;       /* Removes tracking so it stays close to the 'T' */
+}
+
+/* Pronounced Initial Caps: Bouncing off the page in Terracotta */
+.stacks-subtitle > span:not(.stacks-branch-symbol) {
   color: var(--book-terracotta) !important;
   font-weight: 900;
-  font-size: 1.9rem; /* Pushed up significantly from 1.5rem to create a striking contrast */
+  font-size: 2.0rem; /* Pushed up slightly more to maximise the small-caps gap */
   display: inline-block;
-  transform: translateY(1px); /* Subtly balances the baseline weight of the larger font */
+  transform: translateY(1px);
 }
+
 
 
