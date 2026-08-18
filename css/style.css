@@ -279,38 +279,38 @@ header h1 {
 }
 
 /* ==========================================================================
-   THE STACKS - MASTER BRAND HIERARCHY RECALIBRATION
+   ACCESSIBLE & COMPLIANT HEADER TYPOGRAPHY HIERARCHY
    ========================================================================== */
 
-/* Main Header Container Alignment Changes */
+/* Main Header Title: Deep Heritage Green for strong 4.5+ contrast */
 header h1 {
-  color: var(--book-gold) !important; /* Softens the book title into an elegant frame */
+  color: var(--book-green) !important;
   font-family: Georgia, serif;
-  font-size: 2.0rem !important; /* Kept tight to look like a premium book imprint */
+  font-size: 1.9rem !important;
   margin: 0;
-  line-height: 1.1;
-  font-weight: 500; /* Slightly lighter stance to reduce dominance */
-  letter-spacing: 0.02em;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
-/* Recalibrated Subtitle Layout: Heritage Green replaces Body Black */
+/* Sub-brand 'The Stacks': Bold layout with clear structural separation */
 .stacks-subtitle {
   display: block;
-  font-size: 1.35rem; /* Amplified size to give it major physical presence */
+  font-size: 1.35rem;
   font-family: Georgia, serif;
-  font-weight: 800; /* Thick, commanding stance */
-  color: var(--book-green) !important; /* Aligns visually with your primary brand colour */
-  letter-spacing: 7px; /* Elegant, wide-tracked structural alignment */
+  font-weight: 800;
+  color: var(--text-primary) !important; /* High-contrast dark tone meeting WCAG standards */
+  letter-spacing: 7px;
   text-transform: uppercase;
-  margin-top: 14px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border-light); /* Grounding divider line */
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--book-gold);
   width: 100%;
 }
 
-/* Forces the isolated capital letters to pop dramatically in Terracotta */
+/* Terracotta capital letter highlights */
 .stacks-subtitle span {
-  color: var(--book-terracotta) !important; /* The signature branding pop */
+  color: var(--book-terracotta) !important;
   font-weight: 900;
-  font-size: 1.5rem; /* Heavy, physical anchor footprint */
+  font-size: 1.5rem;
 }
+
