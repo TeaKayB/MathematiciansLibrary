@@ -140,11 +140,47 @@ header h1 {
 
 /* Timeline Interface Architecture Tracks */
 .timeline-container { position: relative; padding-left: 35px; margin-top: 30px; }
-.timeline-container::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px; background: var(--book-gold); z-index:2;}
-.timeline-item { position: relative; margin-bottom: 30px; }
-.timeline-item::before { content: ''; position: absolute; left: -27px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--book-terracotta); }
+/* 1. THE VERTICAL GOLD LINE CONTAINER TRACK */
+.timeline-container::before { 
+  content: ''; 
+  position: absolute; 
+  left: 12px; 
+  top: 0; 
+  bottom: 0; 
+  width: 2px; 
+  background: var(--book-gold); 
+  z-index: 2; /* Sits precisely in the middle layer slot */
+}
+/* 2. THE CHRONOLOGICAL CONTENT ROWS (CARDS & TEXT ROWS) */
+.timeline-item { 
+  position: relative; 
+  margin-bottom: 30px; 
+  z-index: 3; /* Forces cards forward so links remain clickable on top of the track */
+}
+/* 3. THE TERRACOTTA NODE DOTS */
+.timeline-item::before { 
+  content: ''; 
+  position: absolute; 
+  left: -27px; 
+  top: 8px; 
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%; 
+  background: var(--book-terracotta); 
+  z-index: 4; /* Stays at the absolute top of the stack, cleanly resting on the gold line */
+}
 
-.timeline-milestone-marker { text-align: center; position: relative; margin: 45px 0 35px -35px; }
+/* 4. THE ERA MILESTONE DIVIDER STRIP TEXT */
+.timeline-milestone-marker span { 
+  background: var(--book-cream); 
+  padding: 0 15px; 
+  color: var(--book-green); 
+  font-weight: bold; 
+  font-size: 0.95rem; 
+  position: relative; 
+  z-index: 1; /* Anchored to the very bottom layer so the gold line crosses through it */
+  font-family: Georgia, serif; 
+}
 .timeline-milestone-marker::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; border-top: 1px dashed var(--book-gold); z-index: 1; }
 .timeline-milestone-marker span { background: var(--book-cream); padding: 0 15px; color: var(--book-green); font-weight: bold; font-size: 0.95rem; position: relative; z-index: 2; font-family: Georgia, serif; z-index:1; }
 .timeline-event-text { max-width: 550px; font-size: 0.95rem; line-height: 1.5; }
