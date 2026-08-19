@@ -16,237 +16,367 @@
     "url": "books/newton-principia.html",
     "alt_text": "An old, slightly stained parchment title page of Sir Isaac Newton's book, 'Philosophiæ Naturalis Principia Mathematica,' printed in 1687. The Latin text is printed in a classic serif font inside a simple double-bordered rectangular frame, featuring the book's title prominently at the top, followed by Newton's name, an official printing approval signed by Samuel Pepys dated 1686, and the publication details for London in Roman numerals at the bottom."
   },
-{
-    "id": "upper-paleolithic-era",
-    "type": "milestone",
-    "display_date": "~20,000 BC",
-    "sort_val": -20000.00,
-    "label": "The Paleolithic Era (Early Counting Marks)"
-  },
-
   {
-    "id": "crossover-point",
-    "type": "milestone",
-    "display_date": "1 BCE / 1 CE",
-    "sort_val": 0.00,
-    "label": "BCE to CE transition"
-  },
+  "milestones": [
+    {
+      "id": "era-paleolithic-end",
+      "type": "milestone",
+      "display_date": "~10000 BCE",
+      "sort_val": -10000,
+      "label": "The Paleolithic Era ends as the retreat of the last glaciers drives the global transition toward farming and permanent human settlements."
+    },
+    {
+      "id": "silk-road-opening",
+      "type": "milestone",
+      "display_date": "~130 BCE",
+      "sort_val": -130,
+      "label": "The Han Dynasty establishes formal trade routes to the West, opening the Silk Road and initiating centuries of Eurasian cultural exchange."
+    },
+    {
+      "id": "viking-voyage-america",
+      "type": "milestone",
+      "display_date": "~1000 CE",
+      "sort_val": 1000,
+      "label": "Norse mariners establish a settlement in modern-day Canada, representing the earliest known European transatlantic voyage."
+    },
+    {
+      "id": "founding-aztec-empire",
+      "type": "milestone",
+      "display_date": "~1325 CE",
+      "sort_val": 1325,
+      "label": "The Mexica people found the city of Tenochtitlan, establishing the geopolitical foundation for the expansion of the Aztec Empire."
+    },
+    {
+      "id": "black-death-europe",
+      "type": "milestone",
+      "display_date": "1347/10",
+      "sort_val": 1347.7863,
+      "label": "Maritime trade routes bring the second plague pandemic to Europe, permanently altering the demographic and economic structure of the continent."
+    },
+    {
+      "id": "gutenberg-printing-press",
+      "type": "milestone",
+      "display_date": "~1440",
+      "sort_val": 1440,
+      "label": "Johannes Gutenberg develops the movable-type printing press in Germany, introducing a systemic system of mass communication to Europe."
+    },
+    {
+      "id": "columbus-reaches-americas",
+      "type": "milestone",
+      "display_date": "1492/10/12",
+      "sort_val": 1492.7787,
+      "label": "A maritime expedition arrives in the Caribbean, initiating sustained interaction and globalization between Europe and the Americas."
+    },
+    {
+      "id": "industrial-revolution-beginning",
+      "type": "milestone",
+      "display_date": "~1760",
+      "sort_val": 1760,
+      "label": "The Industrial Revolution begins in Great Britain, marking the historic transition from agrarian economies to machine-driven manufacturing."
+    },
+    {
+      "id": "industrial-revolution-end",
+      "type": "milestone",
+      "display_date": "~1840",
+      "sort_val": 1840,
+      "label": "The first wave of the Industrial Revolution draws to a close as steam power, mass metallurgy, and railway networks become mature global realities."
+    },
+    {
+      "id": "abolition-slave-trade",
+      "type": "milestone",
+      "display_date": "1807/03/25",
+      "sort_val": 1807.2274,
+      "label": "The British Parliament enacts the Slave Trade Act, marking a significant legal step toward the eventual global prohibition of the transatlantic slave trade."
+    },
+    {
+      "id": "harriet-tubman-underground",
+      "type": "milestone",
+      "display_date": "~1850",
+      "sort_val": 1850,
+      "label": "Harriet Tubman escapes bondage and begins a decade-long series of rescue missions to guide enslaved people along the Underground Railroad."
+    },
+    {
+      "id": "dawn-space-age",
+      "type": "milestone",
+      "display_date": "1957/10/04",
+      "sort_val": 1957.7562,
+      "label": "The Space Age begins as the first artificial satellite, Sputnik 1, successfully reaches orbit and transmits radio signals back to Earth."
+    },
+    {
+      "id": "berlin-wall-fall",
+      "type": "milestone",
+      "display_date": "1989/11/09",
+      "sort_val": 1989.8548,
+      "label": "The opening of the Berlin Wall begins, initiating the collapse of Eastern Bloc regimes and symbolising the approaching conclusion of the Cold War."
+    },
 
-  {
-        "id": "construction-great-pyramid",
-        "type": "milestone",
-        "display_date": "~2560 BCE",
-        "sort_val": -2560,
-        "label": "The Great Pyramid of Giza is completed in Egypt, standing as the world's tallest man-made structure for over 3,800 years."
+    {
+  "events": [
+    {
+      "id": "construction-great-pyramid",
+      "type": "event",
+      "title": "Completion of the Great Pyramid",
+      "display_date": "~2560 BCE",
+      "sort_val": -2560,
+      "place_name": "Giza, Egypt",
+      "context_description": "The Great Pyramid of Giza is completed for Pharaoh Khufu, standing as the world's tallest man-made structure for over 3,800 years and showcasing advanced monumental engineering."
     },
     {
-        "id": "enheduanna-high-priestess",
-        "type": "milestone",
-        "display_date": "~2250 BCE",
-        "sort_val": -2250,
-        "label": "Enheduanna is appointed High Priestess of Ur in Mesopotamia, becoming the earliest individual author recorded by name in human history."
+      "id": "enheduanna-high-priestess",
+      "type": "event",
+      "title": "Appointment of Enheduanna",
+      "display_date": "~2250 BCE",
+      "sort_val": -2250,
+      "place_name": "Ur, Mesopotamia",
+      "context_description": "Enheduanna is appointed High Priestess of the moon god Nanna, writing religious hymns that make her the earliest individual author recorded by name in human history."
     },
     {
-        "id": "code-of-hammurabi",
-        "type": "milestone",
-        "display_date": "~1750 BCE",
-        "sort_val": -1750,
-        "label": "The Code of Hammurabi is enacted in Babylon, establishing one of the earliest and most complete surviving written legal codes."
+      "id": "code-of-hammurabi",
+      "type": "event",
+      "title": "Enactment of Hammurabi's Code",
+      "display_date": "~1750 BCE",
+      "sort_val": -1750,
+      "place_name": "Babylon, Mesopotamia",
+      "context_description": "King Hammurabi enacts a public stone stela of laws, establishing one of the earliest and most complete surviving written legal codes to govern civil and criminal justice."
     },
     {
-        "id": "hatshepsut-reign-begins",
-        "type": "milestone",
-        "display_date": "~1473 BCE",
-        "sort_val": -1473,
-        "label": "Hatshepsut ascends the throne as Pharaoh of Egypt, initiating a period marked by peace, prolific monumental architecture, and vast regional trade."
+      "id": "hatshepsut-reign-begins",
+      "type": "event",
+      "title": "Ascension of Pharaoh Hatshepsut",
+      "display_date": "~1473 BCE",
+      "sort_val": -1473,
+      "place_name": "Thebes, Egypt",
+      "context_description": "Hatshepsut ascends the throne as a female Pharaoh, initiating a prosperous period marked by internal stability, prolific architectural marvels, and extensive regional trade networks."
     },
     {
-        "id": "silk-road-opening",
-        "type": "milestone",
-        "display_date": "~130 BCE",
-        "sort_val": -130,
-        "label": "The Han Dynasty establishes formal trade routes to the West, opening the Silk Road and initiating centuries of Eurasian cultural and economic exchange."
+      "id": "trung-sisters-rebellion",
+      "type": "event",
+      "title": "Uprising of the Trưng Sisters",
+      "display_date": "40 CE",
+      "sort_val": 40,
+      "place_name": "Giao Chỉ, Ancient Vietnam",
+      "context_description": "The Trưng Sisters lead a popular military uprising against Han Dynasty regional governors, briefly establishing an autonomous state and becoming symbols of resistance."
     },
     {
-        "id": "trung-sisters-rebellion",
-        "type": "milestone",
-        "display_date": "40 CE",
-        "sort_val": 40,
-        "label": "The Trưng Sisters lead a military uprising against Han Dynasty rule, briefly establishing an autonomous state in ancient Vietnam."
+      "id": "invention-of-paper-process",
+      "type": "event",
+      "title": "Standardisation of Paper Production",
+      "display_date": "105 CE",
+      "sort_val": 105,
+      "place_name": "Luoyang, China",
+      "context_description": "The Han court official Cai Lun standardises the plant-fibre papermaking process using mulberry bark and rags, fundamentally altering global administration and literature preservation."
     },
     {
-        "id": "invention-of-paper-process",
-        "type": "milestone",
-        "display_date": "105 CE",
-        "sort_val": 105,
-        "label": "The court official Cai Lun standardises the plant-fibre papermaking process in China, fundamentally altering global administration and record-keeping."
+      "id": "death-of-hypatia",
+      "type": "event",
+      "title": "The Death of Hypatia",
+      "display_date": "415/03",
+      "sort_val": 415.2,
+      "place_name": "Alexandria, Egypt",
+      "context_description": "The renowned mathematician, astronomer, and Neoplatonist philosopher Hypatia is killed during a flash point of intense religious and socio-political factional unrest in the city."
     },
     {
-        "id": "death-of-hypatia",
-        "type": "milestone",
-        "display_date": "415/03",
-        "sort_val": 415.2,
-        "label": "The mathematician, astronomer, and Neoplatonist philosopher Hypatia dies in Alexandria during a period of intense socio-political unrest."
+      "id": "wu-zetian-reign-begins",
+      "type": "event",
+      "title": "Proclamation of the Wu Zhou Dynasty",
+      "display_date": "690/10",
+      "sort_val": 690.7863,
+      "place_name": "Luoyang, China",
+      "context_description": "Empress Wu Zetian officially proclaims her independent dynasty, seizing absolute power to become the only female monarch to rule China in her own right."
     },
     {
-        "id": "wu-zetian-reign-begins",
-        "type": "milestone",
-        "display_date": "690/10",
-        "sort_val": 690.7863,
-        "label": "Empress Wu Zetian officially proclaims the Wu Zhou Dynasty, becoming the only female monarch to rule China in her own right."
+      "id": "founding-baghdad-wisdom",
+      "type": "event",
+      "title": "Foundation of Baghdad",
+      "display_date": "762 CE",
+      "sort_val": 762,
+      "place_name": "Baghdad, Iraq",
+      "context_description": "The Abbasid Caliphate founds its capital city, rapidly expanding it into a prominent global intellectual and scientific hub that eventually hosted the famed House of Wisdom."
     },
     {
-        "id": "founding-baghdad-wisdom",
-        "type": "milestone",
-        "display_date": "762 CE",
-        "sort_val": 762,
-        "label": "The city of Baghdad is founded, rapidly expanding into a prominent intellectual and scientific capital during the Islamic Golden Age."
+      "id": "house-of-wisdom-founded",
+      "type": "event",
+      "title": "Institutionalisation of the House of Wisdom",
+      "display_date": "~800",
+      "sort_val": 800,
+      "place_name": "Baghdad, Iraq",
+      "context_description": "The Grand Library of Baghdad transitions into a formal intellectual academy, serving as the world's primary engine for translating Greek, Persian, and Indian mathematical manuscripts into Arabic."
     },
     {
-        "id": "viking-voyage-america",
-        "type": "milestone",
-        "display_date": "~1000 CE",
-        "sort_val": 1000,
-        "label": "Norse mariners establish a settlement at L'Anse aux Meadows in modern-day Canada, representing the earliest known European transatlantic voyage."
+      "id": "oxford-university-teaching",
+      "type": "event",
+      "title": "Earliest Teaching at Oxford",
+      "display_date": "~1096",
+      "sort_val": 1096,
+      "place_name": "Oxford, England",
+      "context_description": "Historical records show the formal initiation of scholastic lectures by visiting scholars, laying the early groundwork for structured scientific and mathematical education in Britain."
     },
     {
-        "id": "magna-carta",
-        "type": "milestone",
-        "display_date": "1215/06/15",
-        "sort_val": 1215.4521,
-        "label": "King John of England seals the Magna Carta, establishing the legal precedent that the monarch is subject to the rule of law."
+      "id": "bologna-university-charter",
+      "type": "event",
+      "title": "Chartering of the University of Bologna",
+      "display_date": "1158",
+      "sort_val": 1158,
+      "place_name": "Bologna, Italy",
+      "context_description": "Emperor Frederick I Barbarossa grants the Authentica Habita charter, formally establishing the school as a place of independent study and pioneering the modern degree-granting university system."
     },
     {
-        "id": "founding-aztec-empire",
-        "type": "milestone",
-        "display_date": "~1325 CE",
-        "sort_val": 1325,
-        "label": "The Mexica people found the city of Tenochtitlan, establishing the geopolitical foundation for the expansion of the Aztec Empire."
+      "id": "sorbonne-founding",
+      "type": "event",
+      "title": "Recognition of the University of Paris",
+      "display_date": "~1200",
+      "sort_val": 1200,
+      "place_name": "Paris, France",
+      "context_description": "The corporation of masters and students receives official charter recognition, transforming France into a premier destination for studying the mathematical quadrivium."
     },
     {
-        "id": "black-death-europe",
-        "type": "milestone",
-        "display_date": "1347/10",
-        "sort_val": 1347.7863,
-        "label": "Maritime trade routes bring the second plague pandemic to Europe via Sicily, altering the demographic and economic structure of the continent."
+      "id": "magna-carta",
+      "type": "event",
+      "title": "Sealing of the Magna Carta",
+      "display_date": "1215/06/15",
+      "sort_val": 1215.4521,
+      "place_name": "Runnymede, England",
+      "context_description": "King John seals the Magna Carta under pressure from rebel barons, establishing the constitutional precedent that even the sovereign is subject to the rule of law."
     },
     {
-        "id": "joan-of-arc-orleans",
-        "type": "milestone",
-        "display_date": "1429/05/08",
-        "sort_val": 1429.3479,
-        "label": "Joan of Arc successfully relieves the Siege of Orléans, shifting the strategic momentum of the Hundred Years' War in favour of France."
+      "id": "joan-of-arc-orleans",
+      "type": "event",
+      "title": "Relief of the Siege of Orléans",
+      "display_date": "1429/05/08",
+      "sort_val": 1429.3479,
+      "place_name": "Orléans, France",
+      "context_description": "Joan of Arc successfully rallies French forces to break the English siege, entirely reversing the strategic momentum of the Hundred Years' War."
     },
     {
-        "id": "gutenberg-printing-press",
-        "type": "milestone",
-        "display_date": "~1440",
-        "sort_val": 1440,
-        "label": "Johannes Gutenberg develops the movable-type printing press in Germany, introducing a system of mass communication to Europe."
+      "id": "magellan-circumnavigation",
+      "type": "event",
+      "title": "Return of the Victoria",
+      "display_date": "1522/09/06",
+      "sort_val": 1522.6795,
+      "place_name": "Sanlúcar de Barrameda, Spain",
+      "context_description": "The vessel Victoria returns home under the command of Juan Sebastián Elcano, surviving an arduous global voyage to complete the first documented human circumnavigation."
     },
     {
-        "id": "columbus-reaches-americas",
-        "type": "milestone",
-        "display_date": "1492/10/12",
-        "sort_val": 1492.7787,
-        "label": "A maritime expedition commanded by Christopher Columbus arrives in the Caribbean, initiating sustained interaction between Europe and the Americas."
+      "id": "queen-nzinga-ascension",
+      "type": "event",
+      "title": "Ascension of Queen Nzinga",
+      "display_date": "~1624",
+      "sort_val": 1624,
+      "place_name": "Kabasa, Angola",
+      "context_description": "Queen Nzinga assumes the throne of Ndongo, launching a formidable, decades-long series of guerrilla campaigns and diplomatic alliances to thwart Portuguese territorial expansion."
     },
     {
-        "id": "magellan-circumnavigation",
-        "type": "milestone",
-        "display_date": "1522/09/06",
-        "sort_val": 1522.6795,
-        "label": "The vessel Victoria returns to Spain under the command of Juan Sebastián Elcano, completing the first documented global circumnavigation."
+      "id": "royal-society-charter",
+      "type": "event",
+      "title": "Chartering of the Royal Society",
+      "display_date": "1662/07/15",
+      "sort_val": 1662.5370,
+      "place_name": "London, England",
+      "context_description": "King Charles II seals the official charter for the Royal Society, formalising an elite academy of natural philosophers and standardising scientific peer-review."
     },
     {
-        "id": "queen-nzinga-ascension",
-        "type": "milestone",
-        "display_date": "~1624",
-        "sort_val": 1624,
-        "label": "Queen Nzinga becomes ruler of Ndongo in modern Angola, directing prolonged military and diplomatic strategies against colonial expansion."
+      "id": "academie-sciences-founded",
+      "type": "event",
+      "title": "Foundation of the Académie des Sciences",
+      "display_date": "1666/12/22",
+      "sort_val": 1666.9753,
+      "place_name": "Paris, France",
+      "context_description": "King Louis XIV establishes the scientific state academy, providing a heavily funded, structured environment that eventually formalised mathematical physics and metrics."
     },
     {
-        "id": "steam-engine-watt",
-        "type": "milestone",
-        "display_date": "~1776",
-        "sort_val": 1776,
-        "label": "James Watt introduces his refined commercial steam engine, providing the mechanical foundation for the Industrial Revolution."
+      "id": "steam-engine-watt",
+      "type": "event",
+      "title": "Introduction of the Watt Steam Engine",
+      "display_date": "~1776",
+      "sort_val": 1776,
+      "place_name": "Birmingham, England",
+      "context_description": "James Watt deploys his commercial condenser steam engine at industrial factories, offering a vastly more efficient method of generating mechanical work."
     },
     {
-        "id": "french-revolution",
-        "type": "milestone",
-        "display_date": "1789/07/14",
-        "sort_val": 1789.5315,
-        "label": "The storming of the Bastille takes place in Paris, marking a major turning point in the French Revolution and the decline of absolute monarchies."
+      "id": "french-revolution",
+      "type": "event",
+      "title": "The Storming of the Bastille",
+      "display_date": "1789/07/14",
+      "sort_val": 1789.5315,
+      "place_name": "Paris, France",
+      "context_description": "Revolutionary citizens assault and capture the Bastille fortress, sparking a decade of systemic social restructuring and the global decline of absolute feudal rules."
     },
     {
-        "id": "abolition-slave-trade",
-        "type": "milestone",
-        "display_date": "1807/03/25",
-        "sort_val": 1807.2274,
-        "label": "The British Parliament enacts the Slave Trade Act, marking a significant legal step toward the eventual global prohibition of the transatlantic slave trade."
+      "id": "lovelace-analytical-engine",
+      "type": "event",
+      "title": "Lovelace's Analytical Engine Notes",
+      "display_date": "1843/09",
+      "sort_val": 1843.7041,
+      "place_name": "London, England",
+      "context_description": "Ada Lovelace completes her elaborate mathematical annotations on Babbage's mechanical computer design, engineering the world's first complex algorithm meant for machine execution."
     },
     {
-        "id": "lovelace-analytical-engine",
-        "type": "milestone",
-        "display_date": "1843/09",
-        "sort_val": 1843.7041,
-        "label": "Ada Lovelace completes her technical notes on the Analytical Engine, creating the first complex algorithm intended for machine execution."
+      "id": "international-congress-mathematicians-first",
+      "type": "event",
+      "title": "First International Congress of Mathematicians",
+      "display_date": "1897/08/09",
+      "sort_val": 1897.6055,
+      "place_name": "Zurich, Switzerland",
+      "context_description": "The premier worldwide convention of research mathematicians opens its assembly doors, building a permanent international community to standardise global research efforts."
     },
     {
-        "id": "harriet-tubman-underground",
-        "type": "milestone",
-        "display_date": "~1850",
-        "sort_val": 1850,
-        "label": "Harriet Tubman escapes bondage and begins a decade-long series of rescue missions to guide enslaved people along the Underground Railroad."
+      "id": "hilbert-problems-address",
+      "type": "event",
+      "title": "Presentation of the Hilbert Problems",
+      "display_date": "1900/08/08",
+      "sort_val": 1900.6027,
+      "place_name": "Paris, France",
+      "context_description": "David Hilbert challenges the mathematical world at the Sorbonne during the International Congress, setting forth 23 foundational unsolved problems that dictated 20th-century research."},
+    {
+      "id": "marie-curie-nobel",
+      "type": "event",
+      "title": "First Female Nobel Prize Laureate","display_date": "1903/12/10","sort_val": 1903.9397,"place_name": "Stockholm, Sweden","context_description": "Marie Curie is co-awarded the Nobel Prize in Physics for her rigorous research into isolation methods for radioactive phenomena, breaking deep institutional barriers."},
+    {
+      "id": "suffragette-black-friday",
+      "type": "event",
+      "title": "The Suffragist March on Parliament","display_date": "1910/11/18","sort_val": 1910.8795,
+      "place_name": "London, England",
+      "context_description": "Hundreds of political suffragists march directly on Parliament to protest the stalling of voting rights laws, facing heavy tactical resistance and escalating the global fight for franchise."
     },
     {
-        "id": "marie-curie-nobel",
-        "type": "milestone",
-        "display_date": "1903/12/10",
-        "sort_val": 1903.9397,
-        "label": "Marie Curie is co-awarded the Nobel Prize in Physics for her research on radiation, becoming the first female recipient of a Nobel Prize."
-    },
-    {
-        "id": "suffragette-black-friday",
-        "type": "milestone",
-        "display_date": "1910/11/18",
-        "sort_val": 1910.8795,
-        "label": "Suffragists march on the British Parliament and encounter severe police resistance, marking a pivotal escalation in the global campaign for women's suffrage."
-    },
-    {
-        "id": "outbreak-world-war-one",
-        "type": "milestone",
-        "display_date": "1914/07/28",
-        "sort_val": 1914.5699,
-        "label": "Austria-Hungary declares war on Serbia, initiating World War I and ending a century of relative geopolitical stability among major European powers."
-    },
-    {
-        "id": "rosa-parks-bus",
-        "type": "milestone",
-        "display_date": "1955/12/01",
-        "sort_val": 1955.9151,
-        "label": "Rosa Parks refuses to surrender her seat on a segregated bus in Alabama, acting as a catalyst for the Montgomery bus boycott and the civil rights movement."
-    },
-    {
-        "id": "valentina-tereshkova-space",
-        "type": "milestone",
-        "display_date": "1963/06/16",
-        "sort_val": 1963.4548,
-        "label": "Soviet cosmonaut Valentina Tereshkova launches into orbit aboard Vostok 6, becoming the first woman to travel in space."
-    },
-    {
-        "id": "tu-youyou-artemisinin",
-        "type": "milestone",
-        "display_date": "~1972",
-        "sort_val": 1972,
-        "label": "The research scientist Tu Youyou isolates artemisinin in China, yielding a breakthrough antimalarial therapy that significantly lowered global mortality rates."
-    },
-    {
-        "id": "berlin-wall-fall",
-        "type": "milestone",
-        "display_date": "1989/11/09",
-        "sort_val": 1989.8548,
-        "label": "The opening of the Berlin Wall begins, initiating the collapse of Eastern Bloc regimes and symbolising the approaching conclusion of the Cold War."
+      "id": "outbreak-world-war-one",
+      "type": "event","title": "Outbreak of World War I",
+      "display_date": "1914/07/28",
+      "sort_val": 1914.5699,
+      "place_name": "Belgrade, Serbia",
+      "context_description": "Austria-Hungary fires the opening artillery shells across the Danube against Serbian forces, initiating a major global industrial conflict that fundamentally redrew borders."
     }
+    ,
+    {
+      "id": "rosa-parks-bus",
+      "type": "event",
+      "title": "Rosa Parks Bus Action",
+      "display_date": "1955/12/01",
+      "sort_val": 1955.9151,
+      "place_name": "Montgomery, Alabama",
+      "context_description": "Rosa Parks refuses a transit driver's instruction to stand up in a racially segregated bus section, serving as the strategic spark for the citywide boycott and civil rights litigation."
+    }
+    ,
+    {
+      "id": "valentina-tereshkova-space",
+      "type": "event",
+      "title": "Launch of Vostok 6",
+      "display_date": "1963/06/16",
+      "sort_val": 1963.4548,
+      "place_name": "Baikonur Cosmodrome, USSR",
+      "context_description": "Cosmonaut Valentina Tereshkova launches into a multi-day solo Earth orbital trajectory, successfully completing a mission that made her the first woman in space."
+    }
+    ,
+    {
+      "id": "tu-youyou-artemisinin","type": "event","title": "Discovery of Artemisinin",
+      "display_date": "~1972",
+      "sort_val": 1972,
+      "place_name": "Beijing, China",
+      "context_description": "Medical researcher Tu Youyou successfully extracts artemisinin from sweet wormwood plants, developing a highly potent antimalarial drug regimen that saved millions of lives."
+    }
+
+
+    
+  ]
+}
 ]
