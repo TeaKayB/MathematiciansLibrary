@@ -330,11 +330,17 @@
     {
       "id": "marie-curie-nobel",
       "type": "event",
-      "title": "First Female Nobel Prize Laureate","display_date": "1903/12/10","sort_val": 1903.9397,"place_name": "Stockholm, Sweden","context_description": "Marie Curie is co-awarded the Nobel Prize in Physics for her rigorous research into isolation methods for radioactive phenomena, breaking deep institutional barriers."},
+      "title": "First Female Nobel Prize Laureate",
+      "display_date": "1903/12/10",
+      "sort_val": 1903.9397,
+      "place_name": "Stockholm, Sweden",
+      "context_description": "Marie Curie is co-awarded the Nobel Prize in Physics for her rigorous research into isolation methods for radioactive phenomena, breaking deep institutional barriers."},
     {
       "id": "suffragette-black-friday",
       "type": "event",
-      "title": "The Suffragist March on Parliament","display_date": "1910/11/18","sort_val": 1910.8795,
+      "title": "The Suffragist March on Parliament",
+      "display_date": "1910/11/18",
+      "sort_val": 1910.8795,
       "place_name": "London, England",
       "context_description": "Hundreds of political suffragists march directly on Parliament to protest the stalling of voting rights laws, facing heavy tactical resistance and escalating the global fight for franchise."
     },
