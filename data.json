@@ -107,6 +107,20 @@
     "label": "The opening of the Berlin Wall begins, initiating the collapse of Eastern Bloc regimes and symbolising the approaching conclusion of the Cold War."
   },
   {
+        "id": "dawn-information-age",
+        "type": "milestone",
+        "display_date": "~1990",
+        "sort_val": 1990.0,
+        "label": "The Information Age takes root globally as digital computing and commercial internet infrastructure transition society into a networked economy."
+    },
+    {
+        "id": "era-renewable-transition",
+        "type": "milestone",
+        "display_date": "~2015",
+        "sort_val": 2015.0,
+        "label": "A global shift toward green energy accelerates, marking the period where solar and wind power begin scaling to rival fossil fuel grids worldwide."
+    },
+  {
     "id": "construction-great-pyramid",
     "type": "event",
     "title": "Completion of the Great Pyramid",
@@ -350,6 +364,15 @@
     "context_description": "Austria-Hungary fires opening artillery across the Danube against Serbian forces, initiating a major global industrial conflict that fundamentally redrew political maps."
   },
   {
+  "id": "outbreak-world-war-two",
+  "type": "event",
+  "title": "Outbreak of World War II",
+  "display_date": "1939/09/01",
+  "sort_val": 1939.6658,
+  "place_name": "Wieluń and Westerplatte, Poland",
+  "context_description": "Germany invades Poland, triggering declarations of war from Britain and France. This marks the outbreak of World War II, a global conflict that fundamentally reshaped international relations, technology, and geography."
+}
+  {
     "id": "rosa-parks-bus",
     "type": "event",
     "title": "Rosa Parks Bus Action",
@@ -375,5 +398,32 @@
     "sort_val": 1972,
     "place_name": "Beijing, China",
     "context_description": "Medical researcher Tu Youyou extracts artemisinin from sweet wormwood plants, developing a potent antimalarial drug that saved millions of lives globally."
-  }
+  },
+  {
+        "id": "founding-united-nations",
+        "type": "event",
+        "title": "Establishment of the United Nations",
+        "display_date": "1945/10/24",
+        "sort_val": 1945.8137,
+        "place_name": "San Francisco, California, USA",
+        "context_description": "The UN charter takes effect, creating an international organization designed to enforce collective security and prevent future global conflicts."
+    },
+    {
+        "id": "invention-transistor",
+        "type": "event",
+        "title": "First Demonstration of the Transistor",
+        "display_date": "1947/12/23",
+        "sort_val": 1947.9753,
+        "place_name": "Murray Hill, New Jersey, USA",
+        "context_description": "Bell Labs successfully tests the first working point-contact transistor, providing the fundamental semiconductor building block for all modern electronics."
+    },
+    {
+        "id": "first-world-wide-web-server",
+        "type": "event",
+        "title": "Launch of the World Wide Web",
+        "display_date": "1991/08/06",
+        "sort_val": 1991.5973,
+        "place_name": "Geneva, Switzerland",
+        "context_description": "Tim Berners-Lee publishes the first public description of the World Wide Web project, making the internet accessible via browser software to the public."
+    }
 ]
