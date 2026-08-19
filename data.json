@@ -121,6 +121,237 @@
         "label": "A global shift toward green energy accelerates, marking the period where solar and wind power begin scaling to rival fossil fuel grids worldwide."
     },
   {
+    "id": "brian-may-red-special",
+    "type": "milestone",
+    "display_date": "~1963",
+    "sort_val": 1963.0,
+    "label": "Brian May and his father Harold finish building the 'Red Special' guitar."
+  },
+  {
+    "id": "doctor-who-1st-doctor",
+    "type": "milestone",
+    "display_date": "1963/11/23",
+    "sort_val": 1963.8931,
+    "label": "Doctor Who debuts on BBC TV with 'An Unearthly Child' (First Doctor)."
+  },
+  {
+    "id": "doctor-who-2nd-doctor",
+    "type": "milestone",
+    "display_date": "1966/10/29",
+    "sort_val": 1966.8246,
+    "label": "The Second Doctor makes his first full appearance in 'The Tenth Planet'."
+  },
+  {
+    "id": "doctor-who-3rd-doctor",
+    "type": "milestone",
+    "display_date": "1970/01/03",
+    "sort_val": 1970.0054,
+    "label": "The Third Doctor debuts in the colour serial 'Spearhead from Space'."
+  },
+  {
+    "id": "queen-album-queen",
+    "type": "milestone",
+    "display_date": "1973/07/13",
+    "sort_val": 1973.5287,
+    "label": "Queen releases their self-titled debut studio album, 'Queen'."
+  },
+  {
+    "id": "queen-album-queen-ii",
+    "type": "milestone",
+    "display_date": "1974/03/08",
+    "sort_val": 1974.1808,
+    "label": "Queen releases their second studio album, 'Queen II'."
+  },
+  {
+    "id": "queen-album-sheer-heart-attack",
+    "type": "milestone",
+    "display_date": "1974/11/08",
+    "sort_val": 1974.852,
+    "label": "Queen releases their third studio album, 'Sheer Heart Attack'."
+  },
+  {
+    "id": "doctor-who-4th-doctor",
+    "type": "milestone",
+    "display_date": "1974/12/28",
+    "sort_val": 1974.989,
+    "label": "The Fourth Doctor debuts in the first episode of 'Robot'."
+  },
+  {
+    "id": "queen-album-night-at-the-opera",
+    "type": "milestone",
+    "display_date": "1975/11/21",
+    "sort_val": 1975.8876,
+    "label": "Queen releases their fourth studio album, 'A Night at the Opera'."
+  },
+  {
+    "id": "queen-album-day-at-the-races",
+    "type": "milestone",
+    "display_date": "1976/12/10",
+    "sort_val": 1976.9398,
+    "label": "Queen releases their fifth studio album, 'A Day at the Races'."
+  },
+  {
+    "id": "queen-album-news-of-the-world",
+    "type": "milestone",
+    "display_date": "1977/10/28",
+    "sort_val": 1977.8219,
+    "label": "Queen releases their sixth studio album, 'News of the World'."
+  },
+  {
+    "id": "queen-album-jazz",
+    "type": "milestone",
+    "display_date": "1978/11/10",
+    "sort_val": 1978.8575,
+    "label": "Queen releases their seventh studio album, 'Jazz'."
+  },
+  {
+    "id": "queen-album-the-game",
+    "type": "milestone",
+    "display_date": "1980/06/30",
+    "sort_val": 1980.4945,
+    "label": "Queen releases their eighth studio album, 'The Game'."
+  },
+  {
+    "id": "queen-album-flash-gordon",
+    "type": "milestone",
+    "display_date": "1980/12/08",
+    "sort_val": 1980.9344,
+    "label": "Queen releases their ninth studio album, 'Flash Gordon'."
+  },
+  {
+    "id": "doctor-who-5th-doctor",
+    "type": "milestone",
+    "display_date": "1982/01/04",
+    "sort_val": 1982.0082,
+    "label": "The Fifth Doctor debuts in the first episode of 'Castrovalva'."
+  },
+  {
+    "id": "queen-album-hot-space",
+    "type": "milestone",
+    "display_date": "1982/05/21",
+    "sort_val": 1982.3835,
+    "label": "Queen releases their tenth studio album, 'Hot Space'."
+  },
+  {
+    "id": "queen-album-the-works",
+    "type": "milestone",
+    "display_date": "1984/02/27",
+    "sort_val": 1984.1557,
+    "label": "Queen releases their eleventh studio album, 'The Works'."
+  },
+  {
+    "id": "doctor-who-6th-doctor",
+    "type": "milestone",
+    "display_date": "1984/03/22",
+    "sort_val": 1984.2213,
+    "label": "The Sixth Doctor debuts in the first episode of 'The Twin Dilemma'."
+  },
+  {
+    "id": "queen-album-a-kind-of-magic",
+    "type": "milestone",
+    "display_date": "1986/06/02",
+    "sort_val": 1986.4164,
+    "label": "Queen releases their twelfth studio album, 'A Kind of Magic'."
+  },
+  {
+    "id": "doctor-who-7th-doctor",
+    "type": "milestone",
+    "display_date": "1987/09/07",
+    "sort_val": 1987.6821,
+    "label": "The Seventh Doctor debuts in the first episode of 'Time and the Rani'."
+  },
+  {
+    "id": "red-dwarf-premiere",
+    "type": "milestone",
+    "display_date": "1988/02/15",
+    "sort_val": 1988.123,
+    "label": "Red Dwarf broadcasts for the very first time on BBC Two with 'The End'."
+  },
+  {
+    "id": "queen-album-the-miracle",
+    "type": "milestone",
+    "display_date": "1989/05/22",
+    "sort_val": 1989.3863,
+    "label": "Queen releases their thirteenth studio album, 'The Miracle'."
+  },
+  {
+    "id": "queen-album-innuendo",
+    "type": "milestone",
+    "display_date": "1991/02/04",
+    "sort_val": 1991.0931,
+    "label": "Queen releases their fourteenth studio album, 'Innuendo'."
+  },
+  {
+    "id": "freddie-mercury-death",
+    "type": "milestone",
+    "display_date": "1991/11/24",
+    "sort_val": 1991.8958,
+    "label": "Queen frontman and iconic vocalist Freddie Mercury dies."
+  },
+  {
+    "id": "queen-album-made-in-heaven",
+    "type": "milestone",
+    "display_date": "1995/11/06",
+    "sort_val": 1995.8465,
+    "label": "Queen releases their fifteenth and final studio album, 'Made in Heaven'."
+  },
+  {
+    "id": "doctor-who-8th-doctor",
+    "type": "milestone",
+    "display_date": "1996/05/12",
+    "sort_val": 1996.3606,
+    "label": "The Eighth Doctor debuts in the transatlantic television movie."
+  },
+  {
+    "id": "doctor-who-9th-doctor",
+    "type": "milestone",
+    "display_date": "2005/03/26",
+    "sort_val": 2005.2301,
+    "label": "The Ninth Doctor debuts as Doctor Who returns to television in 'Rose'."
+  },
+  {
+    "id": "doctor-who-10th-doctor",
+    "type": "milestone",
+    "display_date": "2005/12/25",
+    "sort_val": 2005.9808,
+    "label": "The Tenth Doctor makes his first full appearance in 'The Christmas Invasion'."
+  },
+  {
+    "id": "doctor-who-11th-doctor",
+    "type": "milestone",
+    "display_date": "2010/04/03",
+    "sort_val": 2010.252,
+    "label": "The Eleventh Doctor takes over the TARDIS in 'The Eleventh Hour'."
+  },
+  {
+    "id": "doctor-who-12th-doctor",
+    "type": "milestone",
+    "display_date": "2014/08/23",
+    "sort_val": 2014.641,
+    "label": "The Twelfth Doctor debuts in his first full episode, 'Deep Breath'."
+  },
+  {
+    "id": "doctor-who-13th-doctor",
+    "type": "milestone",
+    "display_date": "2018/10/07",
+    "sort_val": 2018.7643,
+    "label": "The Thirteenth Doctor debuts in 'The Woman Who Fell to Earth'."
+  },
+  {
+    "id": "doctor-who-14th-doctor",
+    "type": "milestone",
+    "display_date": "2023/11/25",
+    "sort_val": 2023.8986,
+    "label": "The Fourteenth Doctor leads the 60th-anniversary special 'The Star Beast'."
+  },
+  {
+    "id": "doctor-who-15th-doctor",
+    "type": "milestone",
+    "display_date": "2023/12/25",
+    "sort_val": 2023.9808,
+    "label": "The Fifteenth Doctor stars in his first full episode, 'The Church on Ruby Road'."
+  },
+  {
     "id": "construction-great-pyramid",
     "type": "event",
     "title": "Completion of the Great Pyramid",
