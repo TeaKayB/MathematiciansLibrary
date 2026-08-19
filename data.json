@@ -13,7 +13,7 @@
     "image": "books/covers/newton-principia.jpg",
     "license": "CC BY-SA 4.0 / Sourced from Wikimedia Commons",
     "url": "books/newton-principia.html",
-    "alt_text": "An old, slightly stained parchment title page of Sir Isaac Newton's book, 'Philosophiæ Naturalis Principia Mathematica,' printed in 1687. The Latin text is printed in a classic serif[...]"
+    "alt_text": "An old, slightly stained parchment title page of Sir Isaac Newton's book, 'Philosophiæ Naturalis Principia Mathematica,' printed in 1687."
   },
   {
     "milestones": [
@@ -117,7 +117,7 @@
         "display_date": "~2560 BCE",
         "sort_val": -2560,
         "place_name": "Giza, Egypt",
-        "context_description": "The Great Pyramid of Giza is completed for Pharaoh Khufu, standing as the world's tallest man-made structure for over 3,800 years and showcasing advanced monumental engin[...]"
+        "context_description": "The Great Pyramid of Giza is completed for Pharaoh Khufu, standing as the world's tallest man-made structure for over 3,800 years and showcasing advanced monumental engineering skills."
       },
       {
         "id": "enheduanna-high-priestess",
@@ -135,7 +135,7 @@
         "display_date": "~1750 BCE",
         "sort_val": -1750,
         "place_name": "Babylon, Mesopotamia",
-        "context_description": "King Hammurabi enacts a public stone stela of laws, establishing one of the earliest and most complete surviving written legal codes to govern civil and criminal justice.[...]"
+        "context_description": "King Hammurabi enacts a public stone stela of laws, establishing one of the earliest and most complete surviving written legal codes to govern civil and criminal justice."
       },
       {
         "id": "hatshepsut-reign-begins",
@@ -144,7 +144,7 @@
         "display_date": "~1473 BCE",
         "sort_val": -1473,
         "place_name": "Thebes, Egypt",
-        "context_description": "Hatshepsut ascends the throne as a female Pharaoh, initiating a prosperous period marked by internal stability, prolific architectural marvels, and extensive regional tra[...]"
+        "context_description": "Hatshepsut ascends the throne as a female Pharaoh, initiating a prosperous period marked by internal stability, prolific architectural marvels, and extensive regional trade."
       },
       {
         "id": "trung-sisters-rebellion",
@@ -162,7 +162,7 @@
         "display_date": "105 CE",
         "sort_val": 105,
         "place_name": "Luoyang, China",
-        "context_description": "The Han court official Cai Lun standardises the plant-fibre papermaking process using mulberry bark and rags, fundamentally altering global administration and literature [...]"
+        "context_description": "The Han court official Cai Lun standardises the plant-fibre papermaking process using mulberry bark and rags, fundamentally altering global administration and literature."
       },
       {
         "id": "death-of-hypatia",
@@ -171,7 +171,7 @@
         "display_date": "415/03",
         "sort_val": 415.2,
         "place_name": "Alexandria, Egypt",
-        "context_description": "The renowned mathematician, astronomer, and Neoplatonist philosopher Hypatia is killed during a flash point of intense religious and socio-political factional unrest in t[...]"
+        "context_description": "The renowned mathematician, astronomer, and Neoplatonist philosopher Hypatia is killed during a flash point of intense religious and socio-political factional unrest."
       },
       {
         "id": "wu-zetian-reign-begins",
@@ -189,7 +189,7 @@
         "display_date": "762 CE",
         "sort_val": 762,
         "place_name": "Baghdad, Iraq",
-        "context_description": "The Abbasid Caliphate founds its capital city, rapidly expanding it into a prominent global intellectual and scientific hub that eventually hosted the famed House of Wisd[...]"
+        "context_description": "The Abbasid Caliphate founds its capital city, rapidly expanding it into a prominent global intellectual and scientific hub that eventually hosted the famed House of Wisdom."
       },
       {
         "id": "house-of-wisdom-founded",
@@ -198,7 +198,7 @@
         "display_date": "~800",
         "sort_val": 800,
         "place_name": "Baghdad, Iraq",
-        "context_description": "The Grand Library of Baghdad transitions into a formal intellectual academy, serving as the world's primary engine for translating Greek, Persian, and Indian mathematical[...]"
+        "context_description": "The Grand Library of Baghdad transitions into a formal intellectual academy, serving as the world's primary engine for translating Greek, Persian, and Indian mathematical texts."
       },
       {
         "id": "oxford-university-teaching",
@@ -207,7 +207,7 @@
         "display_date": "~1096",
         "sort_val": 1096,
         "place_name": "Oxford, England",
-        "context_description": "Historical records show the formal initiation of scholastic lectures by visiting scholars, laying the early groundwork for structured scientific and mathematical educatio[...]"
+        "context_description": "Historical records show the formal initiation of scholastic lectures by visiting scholars, laying the early groundwork for structured scientific and mathematical education in Britain."
       },
       {
         "id": "bologna-university-charter",
@@ -216,7 +216,7 @@
         "display_date": "1158",
         "sort_val": 1158,
         "place_name": "Bologna, Italy",
-        "context_description": "Emperor Frederick I Barbarossa grants the Authentica Habita charter, formally establishing the school as a place of independent study and pioneering the modern degree-gra[...]"
+        "context_description": "Emperor Frederick I Barbarossa grants the Authentica Habita charter, formally establishing the school as a place of independent study and pioneering the modern degree-granting university system."
       },
       {
         "id": "sorbonne-founding",
@@ -252,7 +252,7 @@
         "display_date": "1522/09/06",
         "sort_val": 1522.6795,
         "place_name": "Sanlúcar de Barrameda, Spain",
-        "context_description": "The vessel Victoria returns home under the command of Juan Sebastián Elcano, surviving an arduous global voyage to complete the first documented human circumnavigation[...]"
+        "context_description": "The vessel Victoria returns home under the command of Juan Sebastián Elcano, surviving an arduous global voyage to complete the first documented human circumnavigation."
       },
       {
         "id": "queen-nzinga-ascension",
@@ -261,7 +261,7 @@
         "display_date": "~1624",
         "sort_val": 1624,
         "place_name": "Kabasa, Angola",
-        "context_description": "Queen Nzinga assumes the throne of Ndongo, launching a formidable, decades-long series of guerrilla campaigns and diplomatic alliances to thwart Portuguese territorial ex[...]"
+        "context_description": "Queen Nzinga assumes the throne of Ndongo, launching a formidable, decades-long series of guerrilla campaigns and diplomatic alliances to thwart Portuguese territorial expansion."
       },
       {
         "id": "royal-society-charter",
@@ -306,7 +306,7 @@
         "display_date": "1843/09",
         "sort_val": 1843.7041,
         "place_name": "London, England",
-        "context_description": "Ada Lovelace completes her elaborate mathematical annotations on Babbage's mechanical computer design, engineering the world's first complex algorithm meant for machine e[...]"
+        "context_description": "Ada Lovelace completes her elaborate mathematical annotations on Babbage's mechanical computer design, engineering the world's first complex algorithm meant for machine execution"
       },
       {
         "id": "international-congress-mathematicians-first",
@@ -315,7 +315,7 @@
         "display_date": "1897/08/09",
         "sort_val": 1897.6055,
         "place_name": "Zurich, Switzerland",
-        "context_description": "The premier worldwide convention of research mathematicians opens its assembly doors, building a permanent international community to standardise global research efforts[...]"
+        "context_description": "The premier worldwide convention of research mathematicians opens its assembly doors, building a permanent international community to standardise global research efforts."
       },
       {
         "id": "hilbert-problems-address",
@@ -324,7 +324,7 @@
         "display_date": "1900/08/08",
         "sort_val": 1900.6027,
         "place_name": "Paris, France",
-        "context_description": "David Hilbert challenges the mathematical world at the Sorbonne during the International Congress, setting forth 23 foundational unsolved problems that dictated 20th-cent[...]"
+        "context_description": "David Hilbert challenges the mathematical world at the Sorbonne during the International Congress, setting forth 23 foundational unsolved problems that dictated 20th-century research."
       },
       {
         "id": "marie-curie-nobel",
@@ -342,7 +342,7 @@
         "display_date": "1910/11/18",
         "sort_val": 1910.8795,
         "place_name": "London, England",
-        "context_description": "Hundreds of political suffragists march directly on Parliament to protest the stalling of voting rights laws, facing heavy tactical resistance and escalating the global f[...]"
+        "context_description": "Hundreds of political suffragists march directly on Parliament to protest the stalling of voting rights laws, facing heavy tactical resistance and escalating the global fight for franchise."
       },
       {
         "id": "outbreak-world-war-one",
@@ -351,7 +351,7 @@
         "display_date": "1914/07/28",
         "sort_val": 1914.5699,
         "place_name": "Belgrade, Serbia",
-        "context_description": "Austria-Hungary fires the opening artillery shells across the Danube against Serbian forces, initiating a major global industrial conflict that fundamentally redrew borde[...]"
+        "context_description": "Austria-Hungary fires the opening artillery shells across the Danube against Serbian forces, initiating a major global industrial conflict that fundamentally redrew borders."
       },
       {
         "id": "rosa-parks-bus",
