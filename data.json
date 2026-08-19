@@ -16,6 +16,104 @@
     "alt_text": "An old, slightly stained parchment title page of Sir Isaac Newton's book, 'Philosophiæ Naturalis Principia Mathematica,' printed in 1687."
   },
   {
+    "id": "math-egg-kushim-error",
+    "type": "milestone",
+    "display_date": "~3100 BCE",
+    "sort_val": -3100,
+    "label": "A Sumerian accountant named Kushim signs a clay tablet containing history's first recorded arithmetic error."
+  },
+  {
+    "id": "math-egg-lo-shu-turtle",
+    "type": "milestone",
+    "display_date": "~2200 BCE",
+    "sort_val": -2200,
+    "label": "Chinese scholars document the 'Lo Shu' grid, creating the world's first recorded mathematical magic square."
+  },
+  {
+    "id": "math-egg-khajuraho-square",
+    "type": "milestone",
+    "display_date": "~1000 CE",
+    "sort_val": 1000,
+    "label": "Artisans carve a perfect 4x4 pan-diagonal magic square into the stone walls of Khajuraho, India."
+  },
+  {
+    "id": "math-egg-plus-shorthand",
+    "type": "milestone",
+    "display_date": "~1360",
+    "sort_val": 1360.0,
+    "label": "French philosopher Nicole Oresme introduces the '+' symbol as a rapid script shorthand for the Latin word 'et'."
+  },
+  {
+    "id": "math-egg-slide-rule",
+    "type": "milestone",
+    "display_date": "1622",
+    "sort_val": 1622.0,
+    "label": "William Oughtred invents the circular slide rule, creating history's ultimate analogue calculations device."
+  },
+  {
+    "id": "math-egg-pi-symbol",
+    "type": "milestone",
+    "display_date": "1706",
+    "sort_val": 1706.0,
+    "label": "Welshman William Jones introduces the Greek letter 'π' to represent a circle's circumference-to-diameter ratio."
+  },
+  {
+    "id": "math-egg-four-colour-blunder",
+    "type": "milestone",
+    "display_date": "1879",
+    "sort_val": 1879.0,
+    "label": "Alfred Kempe publishes a proof of the Four Colour Theorem that is celebrated globally before being exposed as a blunder a decade later."
+  },
+  {
+    "id": "math-egg-imaginary-unit",
+    "type": "milestone",
+    "display_date": "1777",
+    "sort_val": 1777.0,
+    "label": "Leonhard Euler first adopts the letter 'i' to explicitly represent the imaginary unit value of the square root of minus one."
+  },
+  {
+    "id": "math-egg-kovalevskaya-appointment",
+    "type": "milestone",
+    "display_date": "1884 CE",
+    "sort_val": 1884.0,
+    "label": "Sofia Kovalevskaya is appointed to a full professorship in mathematics in Sweden, a historic first for modern Europe."
+  },
+  {
+    "id": "math-egg-noether-theorem",
+    "type": "milestone",
+    "display_date": "1915/07",
+    "sort_val": 1915.5,
+    "label": "Emmy Noether proves her landmark theorem linking physical symmetries directly to conservation laws in mathematics."
+  },
+  {
+    "id": "math-egg-cartwright-chaos",
+    "type": "milestone",
+    "display_date": "1938 CE",
+    "sort_val": 1938.0,
+    "label": "Mary Cartwright discovers the underlying structure of unpredictable feedback loops, predating modern chaos theory."
+  },
+  {
+    "id": "math-egg-johnson-glenn-flight",
+    "type": "milestone",
+    "display_date": "1962/02/20",
+    "sort_val": 1962.137,
+    "label": "Katherine Johnson manually recalculates and verifies NASA's first orbital flight trajectories to ensure pilot safety."
+  },
+  {
+    "id": "math-egg-wilson-arm",
+    "type": "milestone",
+    "display_date": "1985/04",
+    "sort_val": 1985.25,
+    "label": "Transgender pioneer Sophie Wilson designs the fundamental ARM instruction architecture, transforming global computer processing."
+  },
+  {
+    "id": "math-egg-mirzakhani-fields",
+    "type": "milestone",
+    "display_date": "2014/08/13",
+    "sort_val": 2014.6137,
+    "label": "Maryam Mirzakhani becomes the first woman to win the Fields Medal for her work on hyperbolic geometry."
+  },
+  {
     "id": "era-paleolithic-end",
     "type": "milestone",
     "display_date": "~10000 BCE",
