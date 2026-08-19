@@ -1,20 +1,5 @@
 [
-  {
-    "id": "euclid-elements",
-    "type": "book",
-    "title": "Elements",
-    "author": "Euclid",
-    "chapter": 1,
-    "display_date": "~300 BC",
-    "sort_val": -300.00,
-    "place_name": "Alexandria, Egypt",
-    "coords": [31.2001, 29.9187],
-    "tags": ["geometry", "antiquity", "textbook"],
-    "image": "images/covers/euclid.jpg",
-    "license": "CC BY-SA 4.0 / Sourced from Wikimedia Commons",
-    "url": "books/euclid-elements.html",
-    "alt_text": "Title page detail of an early printed edition of Euclid's Elements, featuring geometric diagrams."
-  },
+  
   {
     "id": "newton-principia",
     "type": "book",
@@ -38,21 +23,7 @@
     "sort_val": -20000.00,
     "label": "The Paleolithic Era (Early Counting Marks)"
   },
-{
-    "id": "ishango-bone",
-    "type": "book",
-    "title": "The Ishango Bone",
-    "author": "Unknown Maker",
-    "chapter": 1,
-    "display_date": "~20,000 BC",
-    "sort_val": -20000.01,
-    "place_name": "Democratic Republic of the Congo",
-    "coords": [-0.1197, 29.2847],
-    "tags": ["antiquity", "tallying"],
-    "image": "images/covers/ishango.jpg",
-    "url": "books/ishango-bone.html",
-    "alt_text": "A close up of the dark brown Ishango tally bone featuring etched prime number groupings."
-  },
+
   {
     "id": "crossover-point",
     "type": "milestone",
