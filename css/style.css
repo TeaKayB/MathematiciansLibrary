@@ -140,13 +140,13 @@ header h1 {
 
 /* Timeline Interface Architecture Tracks */
 .timeline-container { position: relative; padding-left: 35px; margin-top: 30px; }
-.timeline-container::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px; background: var(--book-gold); }
+.timeline-container::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 2px; background: var(--book-gold); z-index:2;}
 .timeline-item { position: relative; margin-bottom: 30px; }
 .timeline-item::before { content: ''; position: absolute; left: -27px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--book-terracotta); }
 
 .timeline-milestone-marker { text-align: center; position: relative; margin: 45px 0 35px -35px; }
 .timeline-milestone-marker::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; border-top: 1px dashed var(--book-gold); z-index: 1; }
-.timeline-milestone-marker span { background: var(--book-cream); padding: 0 15px; color: var(--book-green); font-weight: bold; font-size: 0.95rem; position: relative; z-index: 2; font-family: Georgia, serif; }
+.timeline-milestone-marker span { background: var(--book-cream); padding: 0 15px; color: var(--book-green); font-weight: bold; font-size: 0.95rem; position: relative; z-index: 2; font-family: Georgia, serif; z-index:1; }
 .timeline-event-text { max-width: 550px; font-size: 0.95rem; line-height: 1.5; }
 .timeline-event-text strong { color: var(--book-green); }
 .timeline-event-text em { display: block; color: var(--text-muted); margin-top: 4px; }
