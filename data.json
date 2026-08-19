@@ -113,7 +113,7 @@
     "display_date": "~2560 BCE",
     "sort_val": -2560,
     "place_name": "Giza, Egypt",
-    "context_description": "The Great Pyramid of Giza is completed for Pharaoh Khufu, standing as the world's tallest man-made structure for over 3,800 years and showcasing advanced monumenta[...]"
+    "context_description": "The Great Pyramid of Giza is completed for Pharaoh Khufu, standing as the world's tallest man-made structure for over 3,800 years and showcasing advanced monumental engineering."
   },
   {
     "id": "enheduanna-high-priestess",
@@ -122,7 +122,7 @@
     "display_date": "~2250 BCE",
     "sort_val": -2250,
     "place_name": "Ur, Mesopotamia",
-    "context_description": "Enheduanna is appointed High Priestess of the moon god Nanna, writing religious hymns that make her the earliest individual author recorded by name in human histor[...]"
+    "context_description": "Enheduanna is appointed High Priestess of the moon god Nanna, writing religious hymns that make her the earliest individual author recorded by name in human history."
   },
   {
     "id": "code-of-hammurabi",
@@ -131,7 +131,7 @@
     "display_date": "~1750 BCE",
     "sort_val": -1750,
     "place_name": "Babylon, Mesopotamia",
-    "context_description": "King Hammurabi enacts a public stone stela of laws, establishing one of the earliest and most complete surviving written legal codes to govern civil and criminal j[...]"
+    "context_description": "King Hammurabi enacts a public stone stela of laws, establishing one of the earliest and most complete surviving written legal codes to govern civil and criminal justice."
   },
   {
     "id": "hatshepsut-reign-begins",
@@ -140,7 +140,7 @@
     "display_date": "~1473 BCE",
     "sort_val": -1473,
     "place_name": "Thebes, Egypt",
-    "context_description": "Hatshepsut ascends the throne as a female Pharaoh, initiating a prosperous period marked by internal stability, prolific architectural marvels, and extensive regio[...]"
+    "context_description": "Hatshepsut ascends the throne as a female Pharaoh, initiating a prosperous period marked by internal stability, prolific architectural marvels, and extensive regional trade networks."
   },
   {
     "id": "trung-sisters-rebellion",
@@ -149,7 +149,7 @@
     "display_date": "40 CE",
     "sort_val": 40,
     "place_name": "Giao Chỉ, Ancient Vietnam",
-    "context_description": "The Trưng Sisters lead a popular military uprising against Han Dynasty regional governors, briefly establishing an autonomous state and becoming symbols of resist[...]"
+    "context_description": "The Trưng Sisters lead a popular military uprising against Han Dynasty regional governors, briefly establishing an autonomous state and becoming symbols of resistance."
   },
   {
     "id": "invention-of-paper-process",
@@ -158,7 +158,7 @@
     "display_date": "105 CE",
     "sort_val": 105,
     "place_name": "Luoyang, China",
-    "context_description": "The Han court official Cai Lun standardises the plant-fibre papermaking process using mulberry bark and rags, fundamentally altering global administration and lite[...]"
+    "context_description": "The Han court official Cai Lun standardises the plant-fibre papermaking process using mulberry bark and rags, fundamentally altering global administration and literature preservation."
   },
   {
     "id": "death-of-hypatia",
@@ -167,7 +167,7 @@
     "display_date": "415/03",
     "sort_val": 415.2,
     "place_name": "Alexandria, Egypt",
-    "context_description": "The renowned mathematician, astronomer, and Neoplatonist philosopher Hypatia is killed during a flash point of intense religious and socio-political factional unre[...]"
+    "context_description": "The renowned mathematician, astronomer, and Neoplatonist philosopher Hypatia is killed during a flash point of intense religious and socio-political factional unrest in the city."
   },
   {
     "id": "wu-zetian-reign-begins",
@@ -185,7 +185,7 @@
     "display_date": "762 CE",
     "sort_val": 762,
     "place_name": "Baghdad, Iraq",
-    "context_description": "The Abbasid Caliphate founds its capital city, rapidly expanding it into a prominent global intellectual and scientific hub that eventually hosted the famed House [...]"
+    "context_description": "The Abbasid Caliphate founds its capital city, rapidly expanding it into a prominent global intellectual and scientific hub that eventually hosted the famed House of Wisdom."
   },
   {
     "id": "house-of-wisdom-founded",
@@ -194,7 +194,7 @@
     "display_date": "~800",
     "sort_val": 800,
     "place_name": "Baghdad, Iraq",
-    "context_description": "The Grand Library of Baghdad transitions into a formal intellectual academy, serving as the world's primary engine for translating Greek, Persian, and Indian mathe[...]"
+    "context_description": "The Grand Library of Baghdad transitions into a formal intellectual academy, serving as the world's primary engine for translating Greek, Persian, and Indian mathematical manuscripts into Arabic."
   },
   {
     "id": "oxford-university-teaching",
