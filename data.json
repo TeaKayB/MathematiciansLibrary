@@ -22,6 +22,7 @@
     "display_date": "~20,000 BC",
     "sort_val": -20000.00,
     "label": "The Paleolithic Era (Early Counting Marks)"
+    "place_name": "Just Testing, Experimentsville",
   },
 
   {
@@ -31,15 +32,7 @@
     "sort_val": 0.00,
     "label": "BCE to CE transition"
   },
-  {
-    "id": "house-of-wisdom-founded",
-    "type": "event",
-    "title": "Foundation of the House of Wisdom",
-    "display_date": "~800",
-    "sort_val": 800.00,
-    "place_name": "Baghdad, Iraq",
-    "context_description": "The Grand Library of Baghdad is established, becoming the world's primary hub for translating ancient Greek and Indian mathematical manuscripts into Arabic."
-  },
+
   {
         "id": "construction-great-pyramid",
         "type": "milestone",
