@@ -440,7 +440,6 @@ th {
 
 thead th {
   color: var(--bg-white) !important; /* Pure white text gives crystal clear contrast on green */
-  text-transform: uppercase;
   font-size: 0.85rem;
   padding: 14px 16px;
   text-align: left;
@@ -530,7 +529,6 @@ tbody tr:hover {
     color: var(--book-terracotta);
     display: block;
     font-size: 0.85rem;
-    text-transform: uppercase;
     margin-bottom: 2px;
   }
 
@@ -540,7 +538,6 @@ tbody tr:hover {
     color: var(--text-muted);
     display: block;
     font-size: 0.85rem;
-    text-transform: uppercase;
     margin-bottom: 2px;
   }
 }
