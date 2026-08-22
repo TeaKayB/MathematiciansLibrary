@@ -542,24 +542,35 @@ tbody tr:hover {
   }
 }
 
-/* Removes default bullets and aligns the checkboxes neatly */
+/* Clean out default bullet points and numbers */
 ul.roadmap-list, 
 ul.roadmap-list ul {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 25px; /* Creates clean indent spacing */
 }
 
+/* First-level list starts flat against the left margin */
+ul.roadmap-list {
+  padding-left: 0;
+}
+
+/* Fixes line wrapping and layout breakdown */
 ul.roadmap-list li {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Spaces the checkbox away from the text */
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
 }
 
-/* Optional styling to make disabled checkboxes look crisp, not faded */
+/* Safely formats checkboxes without forcing horizontal alignment on sub-lists */
+ul.roadmap-list input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px; /* Vertically aligns perfectly with standard text sizes */
+}
+
+/* Ensures disabled checkboxes retain clear visibility */
 ul.roadmap-list input[type="checkbox"]:disabled {
   opacity: 1;
   cursor: default;
 }
-
-
