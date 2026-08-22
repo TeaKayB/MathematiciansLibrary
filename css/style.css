@@ -574,3 +574,47 @@ ul.roadmap-list input[type="checkbox"]:disabled {
   opacity: 1;
   cursor: default;
 }
+
+/* 1. Hide the default browser checkbox but keep its structural space */
+ul.roadmap-list input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  margin: 0 8px 0 0;
+  font: inherit;
+  color: #1c5235; /* This controls your checkmark color */
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #767676; /* Standard border color for empty boxes */
+  border-radius: 0.15em;
+  vertical-align: middle;
+  display: inline-grid;
+  place-content: center;
+  position: relative;
+  top: -1px;
+}
+
+/* 2. Create the custom checkmark character hidden inside the box */
+ul.roadmap-list input[type="checkbox"]::before {
+  content: "✔";
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* 3. When 'checked' is added to the HTML, show the green checkmark and color the box border */
+ul.roadmap-list input[type="checkbox"]:checked {
+  border-color: #1c5235;
+  background-color: #f0f7f4; /* Optional subtle light green background fill */
+}
+
+ul.roadmap-list input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* 4. Keep the visibility bright and high contrast even when disabled */
+ul.roadmap-list input[type="checkbox"]:disabled {
+  opacity: 1;
+  cursor: default;
+}
