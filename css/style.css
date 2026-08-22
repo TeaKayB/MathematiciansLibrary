@@ -618,3 +618,13 @@ ul.roadmap-list input[type="checkbox"]:disabled {
   opacity: 1;
   cursor: default;
 }
+
+/* Bold only the first-level list items */
+ul.roadmap-list > li {
+  font-weight: 600; /* Slightly bold */
+}
+
+/* Reset sub-level items back to normal weight so they don't inherit the boldness */
+ul.roadmap-list li ul li {
+  font-weight: normal;
+}
