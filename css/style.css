@@ -542,4 +542,24 @@ tbody tr:hover {
   }
 }
 
+/* Removes default bullets and aligns the checkboxes neatly */
+ul.roadmap-list, 
+ul.roadmap-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul.roadmap-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spaces the checkbox away from the text */
+  margin-bottom: 6px;
+}
+
+/* Optional styling to make disabled checkboxes look crisp, not faded */
+ul.roadmap-list input[type="checkbox"]:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
 
