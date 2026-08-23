@@ -6,6 +6,17 @@
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
 <link rel="apple-touch-icon" href="favicon.png">
 
+<!-- Dynamic Canonical Tag Engine (Banishes Ahrefs Duplicate Content Errors) -->
+    <script>
+        (function() {
+            const canonicalLink = document.createElement('link');
+            canonicalLink.rel = 'canonical';
+            // Hardcodes the base URL to point strictly to your master tags index page
+            canonicalLink.href = 'https://library.mathsy.space/map.html';
+            document.head.appendChild(canonicalLink);
+        })();
+    </script>
+
     <title>The Mathematicians' Library: The Stacks Map</title>
     
     <!-- Official Leaflet Stylesheet & Script -->
