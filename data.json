@@ -1,4 +1,20 @@
 [
+ {
+  "id": "euclid-elements",
+  "type": "book",
+  "title": "Elements",
+  "author": "Euclid",
+  "chapter": 2,
+  "display_date": "c. 300 BC",
+  "sort_val": -300.0000,
+  "place_name": "Alexandria, Egypt",
+  "coords": [31.2001, 29.9187],
+  "tags": ["geometry", "mathematics", "axioms", "number-theory", "logic", "proofs", "euclidean-geometry", "classical-antiquity", "proportion"],
+  "image": "[TO_BE_UPDATED]",
+  "license": "[TO_BE_UPDATED]",
+  "url": "books/euclid-elements.html",
+  "alt_text": "[TO_BE_UPDATED]"
+},
   {
     "id": "newton-principia",
     "type": "book",
