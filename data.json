@@ -10,10 +10,10 @@
   "place_name": "Alexandria, Egypt",
   "coords": [31.2001, 29.9187],
   "tags": ["geometry", "mathematics", "axioms", "number-theory", "logic", "proofs", "euclidean-geometry", "classical-antiquity", "proportion"],
-  "image": "[TO_BE_UPDATED]",
-  "license": "[TO_BE_UPDATED]",
+  "image": "books/covers/newton-principia.jpg",
+  "license": "University of Pennsylvania Museum of Archaeology and Anthropology, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
   "url": "books/euclid-elements.html",
-  "alt_text": "[TO_BE_UPDATED]"
+  "alt_text": "An ancient, frayed fragment of brown papyrus features faint handwritten Greek text and a simple geometric ink sketch.Discovered at Oxyrhynchus, Egypt, this artifact contains a diagram and passage from Book II, Proposition 5 of Euclid's Elements. The hand-drawn figure shows a partitioned rectangle divided into squares with a diagonal line slicing through the rightmost sections, serving as an early visual proof for an algebraic identity. The papyrus edges are jagged and heavily weathered, with a tiny separated scrap hovering just above the main fragment against a plain white background."
 },
   {
     "id": "newton-principia",
